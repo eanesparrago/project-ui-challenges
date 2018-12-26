@@ -1,26 +1,41 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component, Fragment } from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import "sanitize.css";
 
-class App extends Component {
+import "./app.css";
+
+import Sentiment from "./001_sentiment/Sentiment";
+
+export class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Router>
+        <Fragment>
+          <Route
+            path="/"
+            exact
+            render={() => (
+              <div className="menu">
+                <h1>UI Challenges</h1>
+
+                <nav>
+                  <ul className="menu-list">
+                    <li className="menu-list__item">
+                      <Link to="/001">001. Sentiment</Link>
+
+                      <span className="menu-list__item-date">
+                        December 26, 2018
+                      </span>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            )}
+          />
+
+          <Route path="/001" component={Sentiment} />
+        </Fragment>
+      </Router>
     );
   }
 }
