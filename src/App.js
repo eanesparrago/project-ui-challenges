@@ -16,7 +16,7 @@ export class App extends Component {
             exact
             render={() => (
               <div className="menu">
-                <h1>UI Challenges</h1>
+                <h1 className="menu-title">UI Challenges</h1>
 
                 <nav>
                   <ul className="menu-list">
