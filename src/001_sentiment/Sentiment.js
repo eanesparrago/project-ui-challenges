@@ -1,9 +1,21 @@
 import React, { Component } from "react";
-import { ThemeProvider } from "styled-components";
+import styled, { ThemeProvider, css } from "styled-components";
+import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 
 import Logo from "./components/Logo/Logo";
 import Typography from "./components/Typography/Typography";
 import Button from "./components/Button/Button";
+
+import { ComponentsPage, Login, Main } from "./pages";
+
+const baseRoute = "/001";
+
+const breakpoints = {
+  sm: 600,
+  md: 960,
+  lg: 1280,
+  xl: 1920
+};
 
 const theme = {
   font: {
@@ -19,47 +31,40 @@ const theme = {
     white: "#EFF4FE",
     black: "#30353F"
   },
+  shadow: {
+    main: "0px 5px 4px rgba(48, 53, 63, 0.15);"
+  },
   spacing: {
     unit: "1rem"
-  }
+  },
+  media: Object.keys(breakpoints).reduce((acc, label) => {
+    acc[label] = (...args) => css`
+      @media (max-width: ${breakpoints[label] / 16}em) {
+        ${css(...args)}
+      }
+    `;
+
+    return acc;
+  }, {})
 };
+
+const StyledSentiment = styled.div`
+  a {
+    text-decoration: none;
+  }
+`;
 
 export class Sentiment extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-        <div>
-          <Logo />
-          <Typography variant="h1">
-            The quick brown fox jumped over the lazy dog.
-          </Typography>
-          <Typography variant="h2">
-            The quick brown fox jumped over the lazy dog.
-          </Typography>
-          <Typography variant="h3">
-            The quick brown fox jumped over the lazy dog.
-          </Typography>
-          <Typography variant="h4">
-            The quick brown fox jumped over the lazy dog.
-          </Typography>
-          <Typography variant="h5">
-            The quick brown fox jumped over the lazy dog.
-          </Typography>
-          <Typography variant="subtitle">
-            The quick brown fox jumped over the lazy dog.
-          </Typography>
-          <Typography variant="body">
-            The quick brown fox jumped over the lazy dog.
-          </Typography>
-          <Typography variant="subtle">
-            The quick brown fox jumped over the lazy dog.
-          </Typography>
-          <Typography variant="button">
-            The quick brown fox jumped over the lazy dog.
-          </Typography>
+        <StyledSentiment>
+          <Route exact path={`/001`} component={Login} />
 
-          <Button variant="primary">Button Main</Button>
-        </div>
+          <Route path={`/001/main`} component={Main} />
+
+          <Route path={`/001/components`} component={ComponentsPage} />
+        </StyledSentiment>
       </ThemeProvider>
     );
   }

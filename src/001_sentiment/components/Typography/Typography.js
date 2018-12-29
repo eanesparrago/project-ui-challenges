@@ -5,6 +5,9 @@ const sharedStyles = css`
   color: ${props =>
     props.dark ? props.theme.color.white : props.theme.color.black};
   font-family: ${props => props.theme.font.primary};
+  margin: 0;
+  padding: 0;
+  z-index: 20;
 `;
 
 const StyledBody = styled.p`
@@ -22,6 +25,7 @@ const StyledHeading2 = styled.h2`
   ${sharedStyles}
   font-size: 3.75rem;
   font-weight: 100;
+  color: ${props => props.theme.color.primary.dark};
 `;
 
 const StyledHeading3 = styled.h3`
@@ -53,6 +57,8 @@ const StyledSubtle = styled.span`
   ${sharedStyles}
   font-size: 0.6875rem;
   text-transform: uppercase;
+  font-weight: 700;
+  color: ${props => props.theme.color.primary.dark};
 `;
 
 const StyledButton = styled.span`
@@ -60,6 +66,7 @@ const StyledButton = styled.span`
   font-size: 0.875rem;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
 `;
 
 const Typography = props => {

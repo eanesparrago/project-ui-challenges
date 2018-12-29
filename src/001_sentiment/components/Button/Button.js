@@ -3,26 +3,64 @@ import styled from "styled-components";
 
 import Typography from "../Typography/Typography";
 
+// >>> StyledButtonPrimary
 const StyledButtonPrimary = styled.button`
+  display: block;
   width: 12.5rem;
   height: 2.5rem;
   border-radius: 100rem;
   background-image: ${props => props.theme.color.primary.gradient};
-  border: 1px solid ${props => props.theme.color.black};
-  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid
+    ${props => (props.dark ? props.theme.color.white : props.theme.color.black)};
+  box-shadow: ${props => props.theme.shadow.main};
   cursor: pointer;
 
   :hover {
     background-image: none;
     background-color: ${props => props.theme.color.black};
   }
+
+  > * {
+    color: ${props => props.theme.color.black};
+    text-decoration: none;
+  }
 `;
 
-const StyledButtonSecondary = styled.button``;
+// >>> StyledButtonSecondary
+const StyledButtonSecondary = styled.button`
+  background-color: unset;
+  border: none;
+  cursor: pointer;
 
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+
+  > div {
+    width: calc(100% + 0.2rem);
+    height: 0.125rem;
+    background-color: ${props =>
+      props.dark ? props.theme.color.white : props.theme.color.black};
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
+  }
+
+  ${StyledButtonSecondary}:hover div {
+    transform: scaleY(10);
+    transform-origin: bottom;
+  }
+`;
+
+// >>> Turn the text white on hover
 const StyledTypography = styled(Typography)`
   ${StyledButtonPrimary}:hover & {
     color: ${props => props.theme.color.white};
+  }
+
+  ${StyledButtonSecondary}:hover & {
+    color: ${props =>
+      props.dark ? props.theme.color.black : props.theme.color.white};
   }
 `;
 
@@ -30,14 +68,25 @@ const Button = props => {
   switch (props.variant) {
     case "primary":
       return (
-        <StyledButtonPrimary>
+        <StyledButtonPrimary {...props}>
           <StyledTypography variant="button">{props.children}</StyledTypography>
         </StyledButtonPrimary>
       );
 
+    case "secondary":
+      return (
+        <StyledButtonSecondary {...props}>
+          <StyledTypography {...props} variant="button">
+            {props.children}
+          </StyledTypography>
+
+          <div />
+        </StyledButtonSecondary>
+      );
+
     default:
       return (
-        <StyledButtonPrimary>
+        <StyledButtonPrimary {...props}>
           <StyledTypography variant="button">{props.children}</StyledTypography>
         </StyledButtonPrimary>
       );

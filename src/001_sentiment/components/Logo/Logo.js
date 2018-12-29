@@ -5,7 +5,7 @@ const StyledLogo = styled.span`
   font-family: ${props => props.theme.font.primary};
   color: ${props =>
     props.dark
-      ? props.theme.color.primary.light
+      ? props.theme.color.white
       : props.theme.color.primary.dark};
   font-size: 3rem;
   font-weight: 100;
@@ -13,7 +13,7 @@ const StyledLogo = styled.span`
 `;
 
 const Logo = ({ dark }) => {
-  return <StyledLogo dark={dark}>Sentimental</StyledLogo>;
+  return <StyledLogo dark={dark}>Sentiment</StyledLogo>;
 };
 
 export default Logo;
