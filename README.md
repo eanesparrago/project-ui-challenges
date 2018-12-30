@@ -1,5 +1,5 @@
 # UI Challenges
-Daily UI challenges
+Daily UI challenge
 
 ## Inspiration
 http://collectui.com/challenges/sign-up
