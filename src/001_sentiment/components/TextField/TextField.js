@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const StyledInput = styled.input`
   background-color: unset;
-  border-radius: 3.125rem;
+  border-radius: 3.125em;
   border: 2px solid
     ${props =>
       props.dark

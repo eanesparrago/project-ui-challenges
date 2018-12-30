@@ -8,7 +8,7 @@ const StyledCard = styled.div`
       props.dark
         ? props.theme.color.primary.light
         : props.theme.color.primary.main};
-  border-radius: 1.25rem;
+  border-radius: 1.25em;
 `;
 
 const StyledCardOutline = styled(StyledCard)``;

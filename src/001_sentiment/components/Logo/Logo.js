@@ -7,7 +7,7 @@ const StyledLogo = styled.span`
     props.dark
       ? props.theme.color.white
       : props.theme.color.primary.dark};
-  font-size: 3rem;
+  font-size: 3em;
   font-weight: 100;
   text-transform: uppercase;
 `;

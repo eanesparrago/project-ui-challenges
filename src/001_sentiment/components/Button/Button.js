@@ -6,9 +6,9 @@ import Typography from "../Typography/Typography";
 // >>> StyledButtonPrimary
 const StyledButtonPrimary = styled.button`
   display: block;
-  width: 12.5rem;
-  height: 2.5rem;
-  border-radius: 100rem;
+  width: 12.5em;
+  height: 2.5em;
+  border-radius: 100em;
   background-image: ${props => props.theme.color.primary.gradient};
   border: 1px solid
     ${props => (props.dark ? props.theme.color.white : props.theme.color.black)};
@@ -38,8 +38,8 @@ const StyledButtonSecondary = styled.button`
   justify-content: center;
 
   > div {
-    width: calc(100% + 0.2rem);
-    height: 0.125rem;
+    width: calc(100% + 0.2em);
+    height: 0.125em;
     background-color: ${props =>
       props.dark ? props.theme.color.white : props.theme.color.black};
     transition-duration: 0.1s;

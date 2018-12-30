@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled, { ThemeProvider, css } from "styled-components";
 import { BrowserRouter as Router, Link, Route } from "react-router-dom";
+import moment from "moment";
 
 import Logo from "./components/Logo/Logo";
 import Typography from "./components/Typography/Typography";
@@ -11,7 +12,8 @@ import { ComponentsPage, Login, Main } from "./pages";
 const baseRoute = "/001";
 
 const breakpoints = {
-  sm: 600,
+  xsm: 600,
+  sm: 800,
   md: 960,
   lg: 1280,
   xl: 1920
@@ -35,7 +37,7 @@ const theme = {
     main: "0px 5px 4px rgba(48, 53, 63, 0.15);"
   },
   spacing: {
-    unit: "1rem"
+    unit: "1em"
   },
   media: Object.keys(breakpoints).reduce((acc, label) => {
     acc[label] = (...args) => css`
@@ -49,6 +51,13 @@ const theme = {
 };
 
 const StyledSentiment = styled.div`
+  font-size: 1rem;
+
+  /* >>> md */
+  ${theme.media.md`
+    font-size: 0.875rem;
+  `}
+
   a {
     text-decoration: none;
   }

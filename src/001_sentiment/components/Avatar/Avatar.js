@@ -6,13 +6,13 @@ const StyledAvatar = styled.div`
   justify-content: center;
   overflow: hidden;
   border-radius: 100%;
-  width: 4.6875rem;
-  height: 4.6875rem;
+  width: 4.6875em;
+  height: 4.6875em;
   background-color: ${props => props.theme.color.primary.light};
 
   img {
     width: 100%;
-    /* height: 4.6875rem; */
+    /* height: 4.6875em; */
     object-fit: cover;
   }
 `;
@@ -20,20 +20,20 @@ const StyledAvatar = styled.div`
 const StyledAvatarMedium = styled(StyledAvatar)``;
 
 const StyledAvatarBig = styled(StyledAvatar)`
-  width: 6.25rem;
-  height: 6.25rem;
+  width: 6.25em;
+  height: 6.25em;
 
   img {
-    height: 6.25rem;
+    height: 6.25em;
   }
 `;
 
 const StyledAvatarSmall = styled(StyledAvatar)`
-  width: 3.125rem;
-  height: 3.125rem;
+  width: 3.125em;
+  height: 3.125em;
 
   img {
-    height: 3.125rem;
+    height: 3.125em;
   }
 `;
 

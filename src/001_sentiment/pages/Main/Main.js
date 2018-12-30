@@ -24,29 +24,77 @@ const StyledMain = styled.div`
   padding: calc(${props => props.theme.spacing.unit} * 6)
     calc(${props => props.theme.spacing.unit} * 12);
 
+  /* >>> lg */
   ${props => props.theme.media.lg`
     padding: calc(${props => props.theme.spacing.unit} * 3)
     calc(${props => props.theme.spacing.unit} * 6);
+  `}
+
+  /* >>> md */
+  ${props => props.theme.media.md`
+    padding: calc(${props => props.theme.spacing.unit} * 1.5)
+    calc(${props => props.theme.spacing.unit} * 3);
+  `}
+
+  /* >>> sm */
+  ${props => props.theme.media.sm`
+    grid-template-columns: 1fr;
+    padding: calc(${props => props.theme.spacing.unit} * 1)
+    calc(${props => props.theme.spacing.unit} * 1.5);
+    height: 100%;
   `}
 
   .column-1 {
     display: flex;
     flex-flow: column;
     align-items: flex-start;
+
+    /* >>> sm */
+    ${props => props.theme.media.sm`
+      align-items: stretch;
+    `}
+  }
+
+  .column-1__heading {
+    margin-bottom: ${props => props.theme.spacing.unit};
+
+     /* >>> sm */
+    ${props => props.theme.media.sm`
+      display: flex;
+      justify-content: space-between;
+    `}
   }
 
   .column-1__date {
-    margin-bottom: ${props => props.theme.spacing.unit};
+    ${props => props.theme.media.xsm`
+      font-size: 0.5em;
+    `}
+  }
+
+  .column-1__profile-button {
+    display: none;
+
+    /* >>> sm */
+    ${props => props.theme.media.sm`
+      display: block;
+    `}
   }
 
   .column-1__say-input {
     width: 70%;
     display: flex;
     flex-flow: column;
+    align-items: stretch;
     margin-bottom: calc(${props => props.theme.spacing.unit} * 2);
 
+    /* >>> lg */
     ${props => props.theme.media.lg`
       width: 90%;
+    `}
+
+    /* >>> sm */
+    ${props => props.theme.media.sm`
+      width: 100%;
     `}
 
     > :first-child {
@@ -55,12 +103,45 @@ const StyledMain = styled.div`
 
     > :last-child {
       align-self: flex-end;
+
+      /* >>> xms */
+    ${props => props.theme.media.xsm`
+      width: 100%;
+      align-self: stretch;
+    `}
     }
   }
 
   .column-1__self-posts {
+    height: 27rem;
+    overflow-y: auto;
+    padding-right: calc(${props => props.theme.spacing.unit} * 2);
+    margin-right: calc(${props => props.theme.spacing.unit} * 3);
+    ::-webkit-scrollbar {
+      width: 5px;
+      border-radius: 100%;
+    }
+    ::-webkit-scrollbar-track {
+      background: ${props => props.theme.color.primary.light};
+    }
+    ::-webkit-scrollbar-thumb {
+      background: ${props => props.theme.color.primary.main};
+      border-radius: 15px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: ${props => props.theme.color.primary.dark};
+    }
+
+    /* >>> sm */
+    ${props => props.theme.media.sm`
+      height: unset;
+      overflow-y: hidden;
+      margin-right: 0;
+      margin-bottom: calc(${props => props.theme.spacing.unit} * 2);
+    `}
+
     > *:not(:last-child) {
-      margin-bottom: calc(${props => props.theme.spacing.unit} * 3);
+      margin-bottom: calc(${props => props.theme.spacing.unit} * 2);
     }
   }
 
@@ -72,11 +153,17 @@ const StyledMain = styled.div`
   .column-2__profile-button {
     align-self: flex-end;
     margin-bottom: calc(${props => props.theme.spacing.unit} * 4);
+
+    /* >>> sm */
+    ${props => props.theme.media.sm`
+      display: none;
+    `}
   }
 
   .column-2__normal-posts {
     height: 35rem;
     overflow-y: auto;
+    padding-right: calc(${props => props.theme.spacing.unit} * 2);
     margin-bottom: calc(${props => props.theme.spacing.unit} * 2);
     ::-webkit-scrollbar {
       width: 5px;
@@ -93,6 +180,13 @@ const StyledMain = styled.div`
       background: ${props => props.theme.color.primary.dark};
     }
 
+    /* >>> sm */
+    ${props => props.theme.media.sm`
+      height: unset;
+      overflow-y: hidden;
+    `}
+
+
     > *:not(:last-child) {
       margin-bottom: calc(${props => props.theme.spacing.unit} * 3);
     }
@@ -107,8 +201,14 @@ const Main = () => {
   return (
     <StyledMain>
       <div className="column-1">
-        <div className="column-1__date">
-          <Typography variant="h2">December 26</Typography>
+        <div className="column-1__heading">
+          <div className="column-1__date">
+            <Typography variant="h2">December 26</Typography>
+          </div>
+
+          <div className="column-1__profile-button">
+            <Button variant="secondary">Profile</Button>
+          </div>
         </div>
 
         <div className="column-1__say-input">
@@ -118,16 +218,48 @@ const Main = () => {
         </div>
 
         <div className="column-1__self-posts">
-          <SelfPost content="Good afternoon!" time="Just now" />
+          <SelfPost time="Just now">
+            In amet et incididunt aute ea voluptate culpa ipsum exercitation.!
+          </SelfPost>
 
-          <SelfPost content="Hey" time="An Hour Ago" />
+          <SelfPost time="An Hour Ago">
+            Magna adipisicing et aliqua pariatur dolor consequat deserunt.
+          </SelfPost>
 
-          <SelfPost
-            content="The quick brown fox jumped over the lazy dog."
-            time="5:42 am"
-          />
+          <SelfPost time="5:42 am">
+            Incididunt elit labore est Lorem officia consequat aliquip aliqua
+            eiusmod. Qui Lorem ullamco incididunt ea dolore aliquip sit anim
+            nisi fugiat do ipsum non. Labore anim sint aute elit qui nostrud
+            dolor id nulla eiusmod.
+          </SelfPost>
 
-          <SelfPost content="My first post" time="December 25 | 7:52 pm" />
+          <SelfPost time="December 25 | 7:52 pm">
+            Labore minim enim et laboris cillum consectetur enim commodo.
+          </SelfPost>
+
+          <SelfPost time="December 25 | 7:52 pm">
+            Sunt laborum laborum commodo magna nulla quis dolor.
+          </SelfPost>
+
+          <SelfPost time="December 25 | 7:52 pm">
+            Qui esse nulla enim qui qui. Esse ea officia exercitation deserunt
+            ex dolor veniam incididunt sit pariatur dolor veniam mollit. Sunt
+            ipsum reprehenderit non aliqua minim duis do ad enim tempor. Laborum
+            tempor voluptate sit velit. Aliqua voluptate deserunt exercitation
+            irure tempor duis esse magna in cupidatat mollit. Duis deserunt duis
+            aute qui ullamco ullamco eiusmod. Duis id pariatur fugiat nisi
+            consectetur quis Lorem consequat incididunt ullamco aute.
+          </SelfPost>
+
+          <SelfPost time="December 25 | 7:52 pm">
+            Cupidatat reprehenderit ipsum commodo laboris elit quis esse enim
+            magna proident commodo consectetur quis.
+          </SelfPost>
+
+          <SelfPost time="December 25 | 7:52 pm">
+            Proident non dolor fugiat et ex fugiat consectetur ad veniam
+            incididunt cupidatat do.
+          </SelfPost>
         </div>
       </div>
 
@@ -138,70 +270,92 @@ const Main = () => {
 
         <div className="column-2__normal-posts">
           <NormalPost
-            content="The quick brown fox jumped over the lazy dog."
             time="An hour ago"
             profileImage={<img src={profile01} alt="profile" />}
-          />
+          >
+            Exercitation qui culpa sit enim deserunt nisi in eu sit.
+          </NormalPost>
 
           <NormalPost
-            content="The quick brown fox jumped over the lazy dog."
             time="An hour ago"
             profileImage={<img src={profile02} alt="profile" />}
-          />
+          >
+            Ex exercitation ipsum ea aliquip qui cupidatat tempor aliqua
+            excepteur officia. Nulla aute Lorem duis Lorem ea deserunt magna
+            Lorem dolor id. Nisi laborum duis Lorem minim ex amet culpa.
+          </NormalPost>
 
           <NormalPost
-            content="The quick brown fox jumped over the lazy dog."
             time="An hour ago"
             profileImage={<img src={profile03} alt="profile" />}
-          />
+          >
+            Qui adipisicing mollit proident exercitation ad.
+          </NormalPost>
 
           <NormalPost
-            content="The quick brown fox jumped over the lazy dog."
             time="An hour ago"
             profileImage={<img src={profile04} alt="profile" />}
-          />
+          >
+            Exercitation et anim dolor occaecat voluptate minim id irure.
+          </NormalPost>
 
           <NormalPost
-            content="The quick brown fox jumped over the lazy dog."
             time="An hour ago"
             profileImage={<img src={profile05} alt="profile" />}
-          />
+          >
+            Fugiat elit veniam anim eiusmod sint exercitation incididunt quis
+            amet excepteur. Et reprehenderit tempor sint aute exercitation. Eu
+            non eu velit amet duis. Ea ullamco non ea qui nostrud occaecat culpa
+            nisi nostrud. Laboris reprehenderit magna voluptate id et ad
+            incididunt. Velit tempor ea voluptate velit anim esse anim do aute
+            est est culpa voluptate incididunt. Sit tempor minim proident anim
+            eu nulla fugiat sunt.
+          </NormalPost>
 
           <NormalPost
-            content="The quick brown fox jumped over the lazy dog."
             time="An hour ago"
             profileImage={<img src={profile06} alt="profile" />}
-          />
+          >
+            Nulla irure id consectetur reprehenderit labore ad non laboris
+            aliquip commodo. Dolore est velit dolor veniam incididunt nostrud ex
+            voluptate esse magna eu deserunt. Fugiat minim ut ut sint do
+            voluptate tempor dolor consequat id id.
+          </NormalPost>
 
           <NormalPost
-            content="The quick brown fox jumped over the lazy dog."
             time="An hour ago"
             profileImage={<img src={profile07} alt="profile" />}
-          />
+          >
+            Ex veniam nulla Lorem Lorem veniam cupidatat pariatur cillum.
+          </NormalPost>
 
           <NormalPost
-            content="The quick brown fox jumped over the lazy dog."
             time="An hour ago"
             profileImage={<img src={profile08} alt="profile" />}
-          />
+          >
+            Laboris enim eiusmod exercitation Lorem.
+          </NormalPost>
 
           <NormalPost
-            content="The quick brown fox jumped over the lazy dog."
             time="An hour ago"
             profileImage={<img src={profile09} alt="profile" />}
-          />
+          >
+            Laboris minim duis ex mollit duis ex officia ex nisi.
+          </NormalPost>
 
           <NormalPost
-            content="The quick brown fox jumped over the lazy dog."
             time="An hour ago"
             profileImage={<img src={profile10} alt="profile" />}
-          />
+          >
+            Eu aliqua eiusmod est officia veniam sit.
+          </NormalPost>
 
           <NormalPost
-            content="The quick brown fox jumped over the lazy dog."
             time="An hour ago"
             profileImage={<img src={profile11} alt="profile" />}
-          />
+          >
+            Tempor labore sint sunt cupidatat adipisicing non sint.
+          </NormalPost>
         </div>
 
         <div className="column-2__logo">

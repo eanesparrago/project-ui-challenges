@@ -12,50 +12,51 @@ const sharedStyles = css`
 
 const StyledBody = styled.p`
   ${sharedStyles}
-  font-size: 1rem;
+  font-size: 1em;
+  line-height: 1.5;
 `;
 
 const StyledHeading1 = styled.h1`
   ${sharedStyles}
-  font-size: 5rem;
+  font-size: 5em;
   font-weight: 100;
 `;
 
 const StyledHeading2 = styled.h2`
   ${sharedStyles}
-  font-size: 3.75rem;
+  font-size: 3.75em;
   font-weight: 100;
   color: ${props => props.theme.color.primary.dark};
 `;
 
 const StyledHeading3 = styled.h3`
   ${sharedStyles}
-  font-size: 3rem;
+  font-size: 3em;
   font-weight: 300;
 `;
 
 const StyledHeading4 = styled.h4`
   ${sharedStyles}
-  font-size: 2rem;
+  font-size: 2em;
   font-weight: 300;
 `;
 
 const StyledHeading5 = styled.h5`
   ${sharedStyles}
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-weight: 700;
 `;
 
 const StyledSubtitle = styled.span`
   ${sharedStyles}
-  font-size: 1rem;
+  font-size: 1em;
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.1em;
 `;
 
 const StyledSubtle = styled.span`
   ${sharedStyles}
-  font-size: 0.6875rem;
+  font-size: 0.6875em;
   text-transform: uppercase;
   font-weight: 700;
   color: ${props => props.theme.color.primary.dark};
@@ -63,7 +64,7 @@ const StyledSubtle = styled.span`
 
 const StyledButton = styled.span`
   ${sharedStyles}
-  font-size: 0.875rem;
+  font-size: 0.875em;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
