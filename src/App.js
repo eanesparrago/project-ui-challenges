@@ -12,6 +12,7 @@ export class App extends Component {
       <Router>
         <Fragment>
           <Route
+            basename={process.env.PUBLIC_URL}
             path="/"
             exact
             render={() => (
