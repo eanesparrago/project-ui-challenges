@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 import styled, { ThemeProvider, css } from "styled-components";
-import { BrowserRouter as Router, Link, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Link,
+  Route,
+  Redirect,
+  Switch
+} from "react-router-dom";
 import moment from "moment";
 
 import Logo from "./components/Logo/Logo";
@@ -68,11 +74,15 @@ export class Sentiment extends Component {
     return (
       <ThemeProvider theme={theme}>
         <StyledSentiment>
-          <Route exact path={`/001`} component={Login} />
+          <Switch>
+            <Route exact path={`/001`} component={Login} />
 
-          <Route path={`/001/main`} component={Main} />
+            <Route path={`/001/main`} component={Main} />
 
-          <Route path={`/001/components`} component={ComponentsPage} />
+            <Route path={`/001/components`} component={ComponentsPage} />
+
+            <Route component={() => <div>404 Not found </div>} />
+          </Switch>
         </StyledSentiment>
       </ThemeProvider>
     );
