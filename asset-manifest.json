@@ -1,7 +1,7 @@
 {
   "main.css": "/project-ui-challenges/static/css/main.ff3bc4cf.chunk.css",
-  "main.js": "/project-ui-challenges/static/js/main.7f49ef03.chunk.js",
-  "main.js.map": "/project-ui-challenges/static/js/main.7f49ef03.chunk.js.map",
+  "main.js": "/project-ui-challenges/static/js/main.8cf80ffc.chunk.js",
+  "main.js.map": "/project-ui-challenges/static/js/main.8cf80ffc.chunk.js.map",
   "static/css/1.af0d9c23.chunk.css": "/project-ui-challenges/static/css/1.af0d9c23.chunk.css",
   "static/js/1.4d012128.chunk.js": "/project-ui-challenges/static/js/1.4d012128.chunk.js",
   "static/js/1.4d012128.chunk.js.map": "/project-ui-challenges/static/js/1.4d012128.chunk.js.map",
@@ -18,6 +18,6 @@
   "static/css/main.ff3bc4cf.chunk.css.map": "/project-ui-challenges/static/css/main.ff3bc4cf.chunk.css.map",
   "static/css/1.af0d9c23.chunk.css.map": "/project-ui-challenges/static/css/1.af0d9c23.chunk.css.map",
   "index.html": "/project-ui-challenges/index.html",
-  "precache-manifest.62c40f40b599326f6c079d5442eec0d0.js": "/project-ui-challenges/precache-manifest.62c40f40b599326f6c079d5442eec0d0.js",
+  "precache-manifest.b473fb05a79b5200df116b9e569143ed.js": "/project-ui-challenges/precache-manifest.b473fb05a79b5200df116b9e569143ed.js",
   "service-worker.js": "/project-ui-challenges/service-worker.js"
 }
