@@ -1,12 +1,15 @@
-import React from "react";
+import React, { Component } from "react";
+import { Link, Route } from "react-router-dom";
 import styled from "styled-components";
 
-import { Link } from "react-router-dom";
 import { Logo, TextField, Button } from "../../components";
+
+import SignUpForm from "./components/SignUpForm/SignUpForm";
 
 import bgDog from "../../images/bg-dog.png";
 
 const StyledLogin = styled.div`
+  position: relative;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -47,30 +50,47 @@ const StyledLogin = styled.div`
   }
 `;
 
-const Login = () => {
-  return (
-    <StyledLogin>
-      <div className="login__logo">
-        <Logo dark />
-      </div>
+export default class Login extends Component {
+  state = {
+    isSignUpFormOpen: false
+  };
 
-      <div className="login__text-fields">
-        <TextField dark placeholder="Username" />
+  toggleSignUpForm = () => {
+    this.setState({ isSignUpFormOpen: !this.state.isSignUpFormOpen });
+  };
 
-        <TextField dark placeholder="Password" />
-      </div>
+  render() {
+    return (
+      <StyledLogin>
+        <div className="login__logo">
+          <Logo dark />
+        </div>
 
-      <div className="login__buttons">
-        <Link to="/001/main">
-          <Button dark>Log In</Button>
-        </Link>
+        <div className="login__text-fields">
+          <TextField dark placeholder="Username" />
 
-        <Button type="password" dark variant="secondary">
-          Sign Up
-        </Button>
-      </div>
-    </StyledLogin>
-  );
-};
+          <TextField dark placeholder="Password" />
+        </div>
 
-export default Login;
+        <div className="login__buttons">
+          <Link to="/001/main">
+            <Button dark>Log In</Button>
+          </Link>
+
+          <Button
+            type="password"
+            dark
+            variant="secondary"
+            onClick={this.toggleSignUpForm}
+          >
+            Sign Up
+          </Button>
+        </div>
+
+        {this.state.isSignUpFormOpen ? (
+          <SignUpForm toggleSignUpForm={this.toggleSignUpForm} />
+        ) : null}
+      </StyledLogin>
+    );
+  }
+}

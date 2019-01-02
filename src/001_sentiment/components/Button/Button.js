@@ -17,7 +17,8 @@ const StyledButtonPrimary = styled.button`
 
   :hover {
     background-image: none;
-    background-color: ${props => props.theme.color.black};
+    background-color: ${props =>
+      props.dark ? props.theme.color.white : props.theme.color.black};
   }
 
   > * {
@@ -38,7 +39,7 @@ const StyledButtonSecondary = styled.button`
   justify-content: center;
 
   > div {
-    width: calc(100% + 0.2em);
+    width: calc(100% + 0.3em);
     height: 0.125em;
     background-color: ${props =>
       props.dark ? props.theme.color.white : props.theme.color.black};
@@ -47,7 +48,7 @@ const StyledButtonSecondary = styled.button`
   }
 
   ${StyledButtonSecondary}:hover div {
-    transform: scaleY(10);
+    transform: translateY(0.15em) scaleY(13);
     transform-origin: bottom;
   }
 `;
@@ -55,7 +56,8 @@ const StyledButtonSecondary = styled.button`
 // >>> Turn the text white on hover
 const StyledTypography = styled(Typography)`
   ${StyledButtonPrimary}:hover & {
-    color: ${props => props.theme.color.white};
+    color: ${props =>
+      props.dark ? props.theme.color.black : props.theme.color.white};
   }
 
   ${StyledButtonSecondary}:hover & {
@@ -69,7 +71,9 @@ const Button = props => {
     case "primary":
       return (
         <StyledButtonPrimary {...props}>
-          <StyledTypography variant="button">{props.children}</StyledTypography>
+          <StyledTypography {...props} variant="button">
+            {props.children}
+          </StyledTypography>
         </StyledButtonPrimary>
       );
 
@@ -87,7 +91,9 @@ const Button = props => {
     default:
       return (
         <StyledButtonPrimary {...props}>
-          <StyledTypography variant="button">{props.children}</StyledTypography>
+          <StyledTypography {...props} variant="button">
+            {props.children}
+          </StyledTypography>
         </StyledButtonPrimary>
       );
   }

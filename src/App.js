@@ -22,7 +22,7 @@ export class App extends Component {
                   <nav>
                     <ul className="menu-list">
                       <li className="menu-list__item">
-                        <Link to="/001">001. Sentiment</Link>
+                        <Link to="/001">001. Sentiment (Sign Up)</Link>
 
                         <span className="menu-list__item-date">
                           December 26, 2018
