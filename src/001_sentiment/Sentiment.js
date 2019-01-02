@@ -74,11 +74,11 @@ export class Sentiment extends Component {
     return (
       <ThemeProvider theme={theme}>
         <StyledSentiment>
-          <Route exact path={"/001"}>
-            <Redirect to={"/001/login"} />
-          </Route>
-
           <Switch>
+            <Route exact path={"/001"}>
+              <Redirect to={"/001/login"} />
+            </Route>
+
             <Route path={`/001/login`} component={Login} />
 
             <Route path={`/001/main`} component={Main} />

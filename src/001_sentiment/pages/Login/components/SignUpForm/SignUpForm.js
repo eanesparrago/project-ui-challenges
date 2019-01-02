@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Transition } from "react-spring";
 import { Link } from "react-router-dom";
 import { Button, Typography, TextField } from "../../../../components";
 
@@ -22,6 +23,16 @@ const StyledSignUpForm = styled.div`
       calc(${props => props.theme.spacing.unit} * 3);
     background-color: ${props => props.theme.color.black};
     box-shadow: ${props => props.theme.shadow.main};
+
+    /* >>> xsm */
+    ${props => props.theme.media.xsm`
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      border-radius: 0;
+    `}
   }
 
   .header {
@@ -44,9 +55,9 @@ const StyledSignUpForm = styled.div`
   }
 `;
 
-const SignUpForm = ({ toggleSignUpForm }) => {
+const SignUpForm = ({ toggleSignUpForm, style }) => {
   return (
-    <StyledSignUpForm>
+    <StyledSignUpForm style={style}>
       <div className="container">
         <div className="header">
           <Typography dark variant="h3">

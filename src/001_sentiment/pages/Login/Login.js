@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link, Route } from "react-router-dom";
 import styled from "styled-components";
+import { Spring, Transition } from "react-spring";
 
 import { Logo, TextField, Button } from "../../components";
 
@@ -60,6 +61,8 @@ export default class Login extends Component {
   };
 
   render() {
+    const { isSignUpFormOpen } = this.state;
+
     return (
       <StyledLogin>
         <div className="login__logo">
@@ -87,9 +90,22 @@ export default class Login extends Component {
           </Button>
         </div>
 
-        {this.state.isSignUpFormOpen ? (
-          <SignUpForm toggleSignUpForm={this.toggleSignUpForm} />
-        ) : null}
+        <Transition
+          items={isSignUpFormOpen}
+          from={{ opacity: 0 }}
+          enter={{ opacity: 1 }}
+          leave={{ opacity: 0 }}
+        >
+          {isSignUpFormOpen =>
+            isSignUpFormOpen &&
+            (props => (
+              <SignUpForm
+                style={props}
+                toggleSignUpForm={this.toggleSignUpForm}
+              />
+            ))
+          }
+        </Transition>
       </StyledLogin>
     );
   }
