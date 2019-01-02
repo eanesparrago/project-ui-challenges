@@ -30,6 +30,10 @@ const StyledLogin = styled.div`
     width: 20rem;
     margin-bottom: calc(${props => props.theme.spacing.unit} * 3);
 
+    ${props => props.theme.media.xsm`
+      width: 18rem;
+    `}
+
     > :first-child {
       margin-bottom: ${props => props.theme.spacing.unit};
     }
