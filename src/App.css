@@ -24,6 +24,7 @@ html {
 }
 
 .menu-list__item {
+  margin-bottom: 1rem;
 }
 
 .menu-list__item-date {
