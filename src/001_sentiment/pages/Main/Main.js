@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Spring } from "react-spring";
 
-import { Logo, Typography, TextField, Button, Avatar } from "../../components";
+import { Logo, Typography, TextField, Button } from "../../components";
 import { SelfPost, NormalPost } from "../../templates";
 
 import profile01 from "../../images/profile-01.jpg";

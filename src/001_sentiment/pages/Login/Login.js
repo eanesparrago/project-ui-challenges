@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { Link, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { Spring, Transition } from "react-spring";
+import {  Transition } from "react-spring";
 
 import { Logo, TextField, Button } from "../../components";
 

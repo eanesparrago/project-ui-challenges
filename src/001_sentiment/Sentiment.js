@@ -1,21 +1,8 @@
 import React, { Component } from "react";
 import styled, { ThemeProvider, css } from "styled-components";
-import {
-  BrowserRouter as Router,
-  Link,
-  Route,
-  Redirect,
-  Switch
-} from "react-router-dom";
-import moment from "moment";
-
-import Logo from "./components/Logo/Logo";
-import Typography from "./components/Typography/Typography";
-import Button from "./components/Button/Button";
+import { Route, Redirect, Switch } from "react-router-dom";
 
 import { ComponentsPage, Login, Main } from "./pages";
-
-const baseRoute = "/001";
 
 const breakpoints = {
   xsm: 600,

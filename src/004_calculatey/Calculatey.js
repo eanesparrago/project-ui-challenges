@@ -277,6 +277,9 @@ export class Calculatey extends Component {
 
       case "equals":
         return this.getEquals();
+
+      default:
+        console.log("Not my type");
     }
   };
 

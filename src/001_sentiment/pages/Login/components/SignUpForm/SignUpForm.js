@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { Transition } from "react-spring";
 import { Link } from "react-router-dom";
 import { Button, Typography, TextField } from "../../../../components";
 

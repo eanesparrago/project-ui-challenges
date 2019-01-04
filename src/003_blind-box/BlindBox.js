@@ -274,7 +274,7 @@ export class BlindBox extends Component {
                   to={{ color: theme.color.primary }}
                 >
                   {item => props => (
-                    <a style={props} href="#" className="nav-item">
+                    <a style={props} href="#placeholder" className="nav-item">
                       {item.element}
                     </a>
                   )}
@@ -301,7 +301,7 @@ export class BlindBox extends Component {
                   {props => (
                     <a
                       style={props}
-                      href="#"
+                      href="#placeholder"
                       className="store-link"
                       onMouseEnter={this.toggleFlipWoman}
                       onMouseLeave={this.toggleFlipWoman}
@@ -358,7 +358,7 @@ export class BlindBox extends Component {
                   {props => (
                     <a
                       style={props}
-                      href="#"
+                      href="#placeholder"
                       className="store-link"
                       onMouseEnter={this.toggleFlipWoman}
                       onMouseLeave={this.toggleFlipWoman}

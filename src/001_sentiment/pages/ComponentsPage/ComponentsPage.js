@@ -20,7 +20,7 @@ const Wrapper = styled.div`
 const ComponentsPage = () => {
   return (
     <Wrapper>
-      {/* <Logo /> */}
+      <Logo />
 
       <Typography variant="h1">
         The quick brown fox jumped over the lazy dog.

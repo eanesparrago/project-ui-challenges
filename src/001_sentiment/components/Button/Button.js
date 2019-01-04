@@ -47,7 +47,7 @@ const StyledButtonSecondary = styled.button`
     transition-timing-function: ease-in-out;
   }
 
-  ${StyledButtonSecondary}:hover div {
+  &:hover div {
     transform: translateY(0.15em) scaleY(13);
     transform-origin: bottom;
   }
