@@ -7,6 +7,7 @@ import "./app.css";
 import Sentiment from "./001_sentiment/Sentiment";
 import OrbitalSkies from "./002_orbital-skies/OrbitalSkies";
 import BlindBox from "./003_blind-box/BlindBox";
+import Calculatey from "./004_calculatey/Calculatey";
 
 export class App extends Component {
   render() {
@@ -42,9 +43,15 @@ export class App extends Component {
                       </li>
 
                       <li className="menu-list__item">
-                        <Link to="/003">
-                          003. Blind Box (Landing Page)
-                        </Link>
+                        <Link to="/003">003. Blind Box (Landing Page)</Link>
+
+                        <span className="menu-list__item-date">
+                          January 4, 2019
+                        </span>
+                      </li>
+
+                      <li className="menu-list__item">
+                        <Link to="/004">004. Calculatey (Calculator)</Link>
 
                         <span className="menu-list__item-date">
                           January 4, 2019
@@ -61,6 +68,8 @@ export class App extends Component {
             <Route path="/002" component={OrbitalSkies} />
 
             <Route path="/003" component={BlindBox} />
+
+            <Route path="/004" component={Calculatey} />
 
             <Route component={() => <div>404 Not found</div>} />
           </Switch>
