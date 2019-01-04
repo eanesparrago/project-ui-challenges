@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/project-ui-challenges/static/css/1.b19c726b.chunk.css"
   },
   {
-    "revision": "8d5871faca21d468836c5349f8635463",
+    "revision": "058e1afd3c7d289dec48c3442098df36",
     "url": "/project-ui-challenges/index.html"
   }
 ];
