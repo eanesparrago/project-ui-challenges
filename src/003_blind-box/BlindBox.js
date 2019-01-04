@@ -266,22 +266,6 @@ export class BlindBox extends Component {
               </div>
 
               <nav className="nav">
-                {/* <a href="#" className="nav-item">
-                  Store
-                </a>
-                <a href="#" className="nav-item">
-                  About
-                </a>
-                <a href="#" className="nav-item">
-                  Contact
-                </a>
-                <a href="#" className="nav-item">
-                  <i class="fas fa-shopping-cart" />
-                </a>
-                <a href="#" className="nav-item">
-                  <i class="fab fa-facebook" />
-                </a> */}
-
                 <Trail
                   delay="1900"
                   items={navItems}
