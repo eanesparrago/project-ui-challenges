@@ -1,5 +1,5 @@
 # UI Challenges
-Daily UI challenge from http://www.dailyui.co/.
+I've subscribed to the daily UI challenges from http://www.dailyui.co/.
 
 ## Technologies
 ### React
