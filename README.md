@@ -1,7 +1,7 @@
 # UI Challenges
 I've subscribed to the daily UI challenges from http://www.dailyui.co/ to improve my UI designing skills.
 
-You can view what I came up with here: https://ljesp.github.io/project-ui-challenges/
+You can view the designs I came up with here: https://ljesp.github.io/project-ui-challenges/
 
 *Note that the focus of these challenges is the UI. Although I sometimes add functionality, some of the results' functionality may be either missing, incomplete, or buggy.*
 
