@@ -4,20 +4,24 @@ self.__precacheManifest = [
     "url": "/project-ui-challenges/static/media/profile-02.39a73962.jpg"
   },
   {
-    "revision": "89014c005e85a91a004f",
-    "url": "/project-ui-challenges/static/css/main.6b508e4b.chunk.css"
+    "revision": "91fce39bdd4e09bc9164",
+    "url": "/project-ui-challenges/static/css/main.44188066.chunk.css"
   },
   {
     "revision": "3fa699ce54c497fe7280729ff4670fc7",
     "url": "/project-ui-challenges/static/media/profile-11.3fa699ce.jpg"
   },
   {
-    "revision": "132234b1369023b8a10f",
-    "url": "/project-ui-challenges/static/js/1.132234b1.chunk.js"
+    "revision": "1a5cd6f0ec3da7fe920c",
+    "url": "/project-ui-challenges/static/js/1.1a5cd6f0.chunk.js"
   },
   {
     "revision": "5ac804dfdacf09501884",
     "url": "/project-ui-challenges/static/js/runtime~main.5ac804df.js"
+  },
+  {
+    "revision": "1d6a64c99e7ed8ebc83b654afee05b4d",
+    "url": "/project-ui-challenges/static/media/trevert-icon.1d6a64c9.svg"
   },
   {
     "revision": "87c9b750cfc070a61592aa98dfa117be",
@@ -28,8 +32,8 @@ self.__precacheManifest = [
     "url": "/project-ui-challenges/static/media/bg-dog.d4c14a83.png"
   },
   {
-    "revision": "89014c005e85a91a004f",
-    "url": "/project-ui-challenges/static/js/main.89014c00.chunk.js"
+    "revision": "91fce39bdd4e09bc9164",
+    "url": "/project-ui-challenges/static/js/main.91fce39b.chunk.js"
   },
   {
     "revision": "74104644f9fc3db63557e494d92776f3",
@@ -52,11 +56,11 @@ self.__precacheManifest = [
     "url": "/project-ui-challenges/static/media/profile-10.9f9efc2d.jpg"
   },
   {
-    "revision": "132234b1369023b8a10f",
-    "url": "/project-ui-challenges/static/css/1.636abdad.chunk.css"
+    "revision": "1a5cd6f0ec3da7fe920c",
+    "url": "/project-ui-challenges/static/css/1.5c466965.chunk.css"
   },
   {
-    "revision": "a4ffb2abebe268823bf7556dfed332bc",
+    "revision": "6a2a82c39077531722b7972cdf2a25e0",
     "url": "/project-ui-challenges/index.html"
   }
 ];
