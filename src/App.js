@@ -8,6 +8,7 @@ import Sentiment from "./001_sentiment/Sentiment";
 import OrbitalSkies from "./002_orbital-skies/OrbitalSkies";
 import BlindBox from "./003_blind-box/BlindBox";
 import Calculatey from "./004_calculatey/Calculatey";
+import Trevert from "./005_trevert/Trevert";
 
 export class App extends Component {
   render() {
@@ -57,6 +58,14 @@ export class App extends Component {
                           January 4, 2019
                         </span>
                       </li>
+
+                      <li className="menu-list__item">
+                        <Link to="/005">005. Trevert (App Icon)</Link>
+
+                        <span className="menu-list__item-date">
+                          January 5, 2019
+                        </span>
+                      </li>
                     </ul>
                   </nav>
                 </div>
@@ -70,6 +79,8 @@ export class App extends Component {
             <Route path="/003" component={BlindBox} />
 
             <Route path="/004" component={Calculatey} />
+            
+            <Route path="/005" component={Trevert} />
 
             <Route component={() => <div>404 Not found</div>} />
           </Switch>
