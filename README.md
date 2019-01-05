@@ -1,14 +1,21 @@
 # UI Challenges
-Daily UI challenge
+Daily UI challenge from http://www.dailyui.co/.
 
-## Inspiration
-http://collectui.com/challenges/sign-up
-
-## Technologies used
-* React
+## Technologies
+### React
+  * create-react-app
+  * react-router-dom — *routing*
+  * styled-components — *styling*
+  * react-spring — *animation*
+#### Others
+  * react-textfit
+  
+### Figma
 
 ## Author
 Leandro Esparrago
+
+---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
