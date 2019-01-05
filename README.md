@@ -7,7 +7,6 @@ Daily UI challenge from http://www.dailyui.co/.
   * react-router-dom — *routing*
   * styled-components — *styling*
   * react-spring — *animation*
-#### Others
   * react-textfit
   
 ### Figma
