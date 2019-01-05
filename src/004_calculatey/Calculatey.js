@@ -182,10 +182,10 @@ export class Calculatey extends Component {
   setInput = value => {
     // >>> If there's no operator yet...
     if (this.state.operator.value === undefined) {
-      if (this.state.input1 !== undefined && value !== 0) {
+      if (this.state.input1 !== undefined) {
         // >>> Append to input1
         const appendedNumber = "" + this.state.input1 + value;
-        this.setState({ input1: appendedNumber });
+        this.setState({ input1: parseInt(appendedNumber) });
       } else {
         if (value !== 0) {
           this.setState({ input1: value });
@@ -198,9 +198,9 @@ export class Calculatey extends Component {
         this.setState({ input1: value });
 
         // >>> If there's no result and no input2...
-      } else if (this.state.input2 !== undefined && value !== 0) {
+      } else if (this.state.input2 !== undefined) {
         const appendedNumber = "" + this.state.input2 + value;
-        this.setState({ input2: appendedNumber });
+        this.setState({ input2: parseInt(appendedNumber) });
 
         // >>> Append to input2...
       } else {
