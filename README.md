@@ -3,7 +3,7 @@ I've subscribed to the daily UI challenges from http://www.dailyui.co/.
 
 You can view my works here: https://ljesp.github.io/project-ui-challenges/
 
-*Note that the focus of these challenges is the UI. Some of the results' functionality may be either missing or incomplete.*
+*Note that the focus of these challenges is the UI. Although I sometimes add functionality, some of the results' functionality may be either missing, incomplete, or buggy.*
 
 ## Technologies
 ### React
