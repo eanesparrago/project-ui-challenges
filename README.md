@@ -1,5 +1,5 @@
 # UI Challenges
-I've subscribed to the daily UI challenges from http://www.dailyui.co/.
+I've subscribed to the daily UI challenges from http://www.dailyui.co/. View my works here: https://ljesp.github.io/project-ui-challenges/
 
 ## Technologies
 ### React
