@@ -12,7 +12,7 @@ You can view the designs I came up with here: https://ljesp.github.io/project-ui
 *This challenge was difficult for me since there's a lot of ways of implemeting this UI and I'm clueless what the best practices are. I did some research but the outcome is still pretty barebones.*
 
 ### Day 3: Landing Page — "Blind Box"
-*I watched the film Bird Box and I had this funny idea of a fashion store set in that universe. The outcome is stylish and I animating it.*
+*I watched the film Bird Box and I had this funny idea of a fashion store set in that universe. The outcome is stylish and I enjoyed animating it (not all of it, some parts were painful).*
 
 ### Day 4: Calculator — "Calculatey"
 *I wanted to create something cute for this challenge and I also coded the calculator's functionality. Near the end I had the idea for the clear/reset numbers animation which I really liked (it is also where I realized the power of react-spring). This was the challenge where I first discovered and implemented the react-textfit package which allows me to make text fit their container as it scale which is very useful.*
