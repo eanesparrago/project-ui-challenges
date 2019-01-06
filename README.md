@@ -1,5 +1,5 @@
 # UI Challenges
-I've subscribed to the daily UI challenges from http://www.dailyui.co/ to improve my UI designing skills.
+I've subscribed to the daily UI challenges from http://www.dailyui.co/ to improve my UI skills.
 
 You can view the designs I came up with here: https://ljesp.github.io/project-ui-challenges/
 
