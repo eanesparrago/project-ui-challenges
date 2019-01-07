@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/project-ui-challenges/static/media/profile-02.39a73962.jpg"
   },
   {
-    "revision": "9794d69a50d703899f34",
-    "url": "/project-ui-challenges/static/css/main.44188066.chunk.css"
+    "revision": "c3fc12231d351c6b8a26",
+    "url": "/project-ui-challenges/static/css/main.98014989.chunk.css"
   },
   {
-    "revision": "3fa699ce54c497fe7280729ff4670fc7",
-    "url": "/project-ui-challenges/static/media/profile-11.3fa699ce.jpg"
+    "revision": "4280aa1731683ac80aec0c1aad5f1325",
+    "url": "/project-ui-challenges/static/media/tilda.4280aa17.jpg"
   },
   {
-    "revision": "1a5cd6f0ec3da7fe920c",
-    "url": "/project-ui-challenges/static/js/1.1a5cd6f0.chunk.js"
+    "revision": "4e1c9f36da5706f66223",
+    "url": "/project-ui-challenges/static/js/1.4e1c9f36.chunk.js"
   },
   {
     "revision": "5ac804dfdacf09501884",
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/project-ui-challenges/static/media/bg-dog.d4c14a83.png"
   },
   {
-    "revision": "9794d69a50d703899f34",
-    "url": "/project-ui-challenges/static/js/main.9794d69a.chunk.js"
+    "revision": "c3fc12231d351c6b8a26",
+    "url": "/project-ui-challenges/static/js/main.c3fc1223.chunk.js"
   },
   {
     "revision": "74104644f9fc3db63557e494d92776f3",
@@ -56,11 +56,15 @@ self.__precacheManifest = [
     "url": "/project-ui-challenges/static/media/profile-10.9f9efc2d.jpg"
   },
   {
-    "revision": "1a5cd6f0ec3da7fe920c",
-    "url": "/project-ui-challenges/static/css/1.5c466965.chunk.css"
+    "revision": "3fa699ce54c497fe7280729ff4670fc7",
+    "url": "/project-ui-challenges/static/media/profile-11.3fa699ce.jpg"
   },
   {
-    "revision": "d851a62a105acc77defbed04f5201c49",
+    "revision": "4e1c9f36da5706f66223",
+    "url": "/project-ui-challenges/static/css/1.81955996.chunk.css"
+  },
+  {
+    "revision": "58653f47e02b4f9c752bc7ebe164b8a9",
     "url": "/project-ui-challenges/index.html"
   }
 ];
