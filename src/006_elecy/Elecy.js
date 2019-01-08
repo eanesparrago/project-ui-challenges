@@ -87,7 +87,7 @@ const StyledElecy = animated(styled.div`
     flex-wrap: wrap;
   }
 
-  @media (min-width: 600px) {
+  @media (min-height: 600px) and (min-width: 600px) {
     width: 320px;
     height: 528px;
     border-radius: 1em;
