@@ -20,6 +20,8 @@ You can view the designs I came up with here: https://ljesp.github.io/project-ui
 ### Day 5: App Icon — "Trevert"
 *I wasn't too excited in doing this challenge since I'm not great at making icons specially with the short amount of time. Still, I ended up with a design I'm satisfied with. The concept came from the word "revert" (hence the arrows pointing backwards). I added the T so that it becomes a palindrome. Perhaps it's an app for time travel.*
 
+### Day 6: User Profile — "Elecy"
+*In this challenge I was inspired to make a super simple user profile interface. A lot of time was put into making the layout responsive in both mobile orientations. It's the first project I used grids in Figma for layout (I used rows and columns in previous challenges).*
 
 ## Technologies
 ### React
