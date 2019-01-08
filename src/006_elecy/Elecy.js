@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
-import { Spring } from "react-spring";
+import { Spring, Transition } from "react-spring";
+import TextFit from "react-textfit";
 
 import imageTilda from "./images/tilda.jpg";
 
@@ -97,6 +98,11 @@ const StyledElecy = styled.div`
     width: ${theme.size.medium};
     height: ${theme.size.medium};
     color: ${theme.color.grey.light};
+    transition-duration: 0.15s;
+
+    :hover {
+      color: ${theme.color.grey.dark};
+    }
   }
 
   .menu-container {
@@ -130,7 +136,7 @@ const StyledElecy = styled.div`
 
     @media (max-height: 600px) and (orientation: landscape) {
       flex-grow: 1;
-      width: unset;
+      width: 80%;
       max-width: unset;
       display: grid;
       grid-template-columns: auto 1fr;
@@ -161,8 +167,10 @@ const StyledElecy = styled.div`
 
   .person-name-box {
     /* border: 1px solid magenta; */
+    width: 100%;
     align-self: center;
     margin-bottom: ${theme.spacing.small};
+    text-align: center;
 
     @media (max-height: 600px) and (orientation: landscape) {
       justify-self: center;
@@ -171,7 +179,8 @@ const StyledElecy = styled.div`
     }
 
     .person-name {
-      font-size: 1.5em;
+      /* border: 1px solid magenta; */
+      /* font-size: 1.5em; */
       text-align: center;
     }
   }
@@ -303,7 +312,9 @@ export default class Elecy extends Component {
             </div>
 
             <div className="person-name-box">
-              <span className="person-name">Tilda Swinton</span>
+              <TextFit mode="single" className="person-name">
+                Katherine Matilda Swinton
+              </TextFit>
             </div>
 
             <div className="person-buttons-box">
@@ -343,9 +354,24 @@ export default class Elecy extends Component {
             </div>
           </div>
 
-          {isActionsDialogOpen ? (
-            <PersonActionsDialog toggleActionsDialog={this.toggleActionsDialog} />
-          ) : null}
+          <Transition
+            native
+            items={isActionsDialogOpen}
+            from={{ opacity: 0 }}
+            enter={{ opacity: 1 }}
+            leave={{ opacity: 0 }}
+          >
+            {isActionsDialogOpen =>
+              isActionsDialogOpen &&
+              (props => (
+                <PersonActionsDialog
+                  props={props}
+                  isActionsDialogOpen={isActionsDialogOpen}
+                  toggleActionsDialog={this.toggleActionsDialog}
+                />
+              ))
+            }
+          </Transition>
         </StyledElecy>
       </ThemeProvider>
     );
