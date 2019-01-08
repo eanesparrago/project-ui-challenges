@@ -74,8 +74,10 @@ const StyledElecy = animated(styled.div`
   align-items: center;
   padding: ${theme.spacing.medium};
   background-color: ${theme.color.primary};
-  position: relative;
+  /* position: relative; */
   overflow: hidden;
+
+  position: fixed;
 
   * {
     /* border: 1px solid magenta; */
@@ -364,8 +366,12 @@ export default class Elecy extends Component {
                 </div>
               </div>
 
-              <Transition
-                native
+              <PersonActionsDialog
+                isActionsDialogOpen={isActionsDialogOpen}
+                toggleActionsDialog={this.toggleActionsDialog}
+              />
+
+              {/* <Transition
                 items={isActionsDialogOpen}
                 from={{ opacity: 0 }}
                 enter={{ opacity: 1 }}
@@ -381,7 +387,7 @@ export default class Elecy extends Component {
                     />
                   ))
                 }
-              </Transition>
+              </Transition> */}
             </StyledElecy>
           )}
         </Spring>

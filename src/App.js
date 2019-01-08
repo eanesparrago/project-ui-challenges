@@ -10,6 +10,7 @@ import BlindBox from "./003_blind-box/BlindBox";
 import Calculatey from "./004_calculatey/Calculatey";
 import Trevert from "./005_trevert/Trevert";
 import Elecy from "./006_elecy/Elecy";
+import Settings from "./007_settings/Settings";
 
 // const StyledApp = styled.div`
 //   .app-menu {
@@ -106,6 +107,14 @@ export class App extends Component {
                           January 6, 2019
                         </span>
                       </li>
+
+                      <li className="app-menu-list__item">
+                        <Link to="/007">007. Settings</Link>
+
+                        <span className="app-menu-list__item-date">
+                          January 8, 2019
+                        </span>
+                      </li>
                     </ul>
                   </nav>
                 </div>
@@ -123,6 +132,8 @@ export class App extends Component {
             <Route path="/005" component={Trevert} />
 
             <Route path="/006" component={Elecy} />
+
+            <Route path="/007" component={Settings} />
 
             <Route component={() => <div>404 Not found</div>} />
           </Switch>

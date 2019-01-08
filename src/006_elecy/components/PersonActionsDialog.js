@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import styled from "styled-components";
 import { Spring, Transition, animated } from "react-spring";
 
@@ -22,63 +22,76 @@ const StyledPersonActionsDialog = animated(styled.div`
   }
 `);
 
-const PersonActionsDialog = ({
-  props,
-  isActionsDialogOpen,
-  toggleActionsDialog
-}) => {
+const PersonActionsDialog = ({ isActionsDialogOpen, toggleActionsDialog }) => {
   return (
-    <StyledPersonActionsDialog style={props} onClick={toggleActionsDialog}>
-      <Spring
-        native
-        from={{ transform: "translateX(5em)", opacity: 0 }}
-        to={{ transform: "translateX(0)", opacity: 1 }}
+    <Fragment>
+      <Transition
+        items={isActionsDialogOpen}
+        from={{ opacity: 0 }}
+        enter={{ opacity: 1 }}
+        leave={{ opacity: 0 }}
       >
-        {props => (
-          <animated.div style={props} className="person-button-bubble">
-            <button>
-              <svg className="svg-icon">
-                <use href="#elecy-icon-bubble" />
-              </svg>
-            </button>
-          </animated.div>
-        )}
-      </Spring>
+        {isActionsDialogOpen =>
+          isActionsDialogOpen &&
+          (props => (
+            <StyledPersonActionsDialog
+              style={props}
+              onClick={toggleActionsDialog}
+            >
+              <Spring
+                native
+                from={{ transform: "translateX(5em)", opacity: 0 }}
+                to={{ transform: "translateX(0)", opacity: 1 }}
+              >
+                {props => (
+                  <animated.div style={props} className="person-button-bubble">
+                    <button>
+                      <svg className="svg-icon">
+                        <use href="#elecy-icon-bubble" />
+                      </svg>
+                    </button>
+                  </animated.div>
+                )}
+              </Spring>
 
-      <Spring
-        delay="100"
-        native
-        from={{ transform: "translateX(5em)", opacity: 0 }}
-        to={{ transform: "translateX(0)", opacity: 1 }}
-      >
-        {props => (
-          <animated.div style={props} className="person-button-plus">
-            <button>
-              <svg className="svg-icon">
-                <use href="#elecy-icon-plus" />
-              </svg>
-            </button>
-          </animated.div>
-        )}
-      </Spring>
+              <Spring
+                delay="100"
+                native
+                from={{ transform: "translateX(5em)", opacity: 0 }}
+                to={{ transform: "translateX(0)", opacity: 1 }}
+              >
+                {props => (
+                  <animated.div style={props} className="person-button-plus">
+                    <button>
+                      <svg className="svg-icon">
+                        <use href="#elecy-icon-plus" />
+                      </svg>
+                    </button>
+                  </animated.div>
+                )}
+              </Spring>
 
-      <Spring
-        delay="200"
-        native
-        from={{ transform: "translateX(5em)", opacity: 0 }}
-        to={{ transform: "translateX(0)", opacity: 1 }}
-      >
-        {props => (
-          <animated.div style={props} className="person-button-block">
-            <button>
-              <svg className="svg-icon">
-                <use href="#elecy-icon-block" />
-              </svg>
-            </button>
-          </animated.div>
-        )}
-      </Spring>
-    </StyledPersonActionsDialog>
+              <Spring
+                delay="200"
+                native
+                from={{ transform: "translateX(5em)", opacity: 0 }}
+                to={{ transform: "translateX(0)", opacity: 1 }}
+              >
+                {props => (
+                  <animated.div style={props} className="person-button-block">
+                    <button>
+                      <svg className="svg-icon">
+                        <use href="#elecy-icon-block" />
+                      </svg>
+                    </button>
+                  </animated.div>
+                )}
+              </Spring>
+            </StyledPersonActionsDialog>
+          ))
+        }
+      </Transition>
+    </Fragment>
   );
 };
 
