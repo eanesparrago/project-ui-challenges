@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled, { createGlobalStyle } from "styled-components";
 import profileImage from "./images/profile.png";
+import { Spring, animated } from "react-spring";
 
 const theme = {
   font: {
@@ -44,6 +45,8 @@ const GlobalStyle = createGlobalStyle`
 
   body { 
     font-family: ${theme.font.primary};
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5, h6, p, button {
@@ -73,6 +76,7 @@ const StyledSettings = styled.div`
   .sidebar-container {
     /* border: 1px solid magenta; */
     padding: ${theme.space.lg};
+    overflow: hidden;
 
     .sidebar-title-box {
       /* border: 1px solid magenta; */
@@ -130,6 +134,7 @@ const StyledSettings = styled.div`
   .main-container {
     /* border: 1px solid cyan; */
     padding: ${theme.space.lg};
+    overflow: hidden;
 
     .main-title-box {
       /* border: 1px solid magenta; */
@@ -245,6 +250,7 @@ const StyledSettings = styled.div`
     color: ${theme.color.white};
     text-transform: uppercase;
     font-weight: 500;
+    transition: 0.15s;
 
     &:not(:last-child) {
       margin-bottom: ${theme.space.sm};
@@ -258,6 +264,10 @@ const StyledSettings = styled.div`
       color: ${theme.color.grey.main};
       border: 1px solid ${theme.color.grey.main};
       background-color: unset;
+    }
+
+    &:hover {
+      box-shadow: 0 0.2em 0.7em rgba(0, 0, 0, 0.2);
     }
   }
 `;
@@ -295,123 +305,164 @@ export default class Settings extends Component {
         </svg>
 
         <nav className="sidebar-container">
-          <div className="sidebar-title-box">
-            <h1 className="sidebar-title">Settings</h1>
-          </div>
+          <Spring
+            delay={450}
+            native
+            from={{ transform: "translateX(50vw)", opacity: "0" }}
+            to={{ transform: "translateX(0)", opacity: "1" }}
+          >
+            {props => (
+              <animated.div style={props}>
+                <div className="sidebar-title-box">
+                  <h1 className="sidebar-title">Settings</h1>
+                </div>
 
-          <div className="sidebar-item-container">
-            <div className="sidebar-item-box">
-              <button className="sidebar-item sidebar-item--active">
-                Profile
-              </button>
-            </div>
+                <div className="sidebar-item-container">
+                  <div className="sidebar-item-box">
+                    <button className="sidebar-item sidebar-item--active">
+                      Profile
+                    </button>
+                  </div>
 
-            <div className="sidebar-item-box">
-              <button className="sidebar-item">Account</button>
-            </div>
+                  <div className="sidebar-item-box">
+                    <button className="sidebar-item">Account</button>
+                  </div>
 
-            <div className="sidebar-item-box">
-              <button className="sidebar-item">Emails</button>
-            </div>
+                  <div className="sidebar-item-box">
+                    <button className="sidebar-item">Emails</button>
+                  </div>
 
-            <div className="sidebar-item-box">
-              <button className="sidebar-item">Notifications</button>
-            </div>
+                  <div className="sidebar-item-box">
+                    <button className="sidebar-item">Notifications</button>
+                  </div>
 
-            <div className="sidebar-item-box">
-              <button className="sidebar-item">Billings</button>
-            </div>
-          </div>
+                  <div className="sidebar-item-box">
+                    <button className="sidebar-item">Billings</button>
+                  </div>
+                </div>
+              </animated.div>
+            )}
+          </Spring>
         </nav>
 
         <div className="divider-box">
-          <div className="divider" />
+          <Spring
+            native
+            from={{ transform: "scaleY(0)" }}
+            to={{ transform: "scaleY(1)" }}
+          >
+            {props => <animated.div style={props} className="divider" />}
+          </Spring>
         </div>
 
         <section className="main-container">
-          <div className="main-title-box">
-            <h1 className="main-title color-primary">Profile</h1>
-          </div>
-
-          <div className="fields-container">
-            <div className="fields-col-1">
-              <div className="photo-settings-container">
-                <div className="photo-box">
-                  <img src={profileImage} alt="" className="photo" />
+          <Spring
+            delay={450}
+            native
+            from={{ transform: "translateX(-50vw)", opacity: "0" }}
+            to={{ transform: "translateX(0)", opacity: "1" }}
+          >
+            {props => (
+              <animated.div style={props}>
+                <div className="main-title-box">
+                  <h1 className="main-title color-primary">Profile</h1>
                 </div>
 
-                <div className="photo-buttons-box">
-                  <button className="button">Change Photo</button>
+                <div className="fields-container">
+                  <div className="fields-col-1">
+                    <div className="photo-settings-container">
+                      <div className="photo-box">
+                        <img src={profileImage} alt="" className="photo" />
+                      </div>
 
-                  <button className="button button--secondary">
-                    Remove Photo
-                  </button>
+                      <div className="photo-buttons-box">
+                        <button className="button">Change Photo</button>
+
+                        <button className="button button--secondary">
+                          Remove Photo
+                        </button>
+                      </div>
+                    </div>
+
+                    <div className="field-box">
+                      <label htmlFor="" className="field-label">
+                        Name
+                      </label>
+
+                      <input type="text" className="field-input" />
+                    </div>
+
+                    <div className="field-box">
+                      <label htmlFor="" className="field-label">
+                        Email
+                      </label>
+
+                      <input type="text" className="field-input" />
+                    </div>
+
+                    <div className="field-box">
+                      <label htmlFor="" className="field-label">
+                        Bio
+                      </label>
+
+                      <textarea rows="4" className="field-textarea" />
+                    </div>
+
+                    <div className="field-box">
+                      <label htmlFor="" className="field-label">
+                        URL
+                      </label>
+
+                      <input type="text" className="field-input" />
+                    </div>
+                  </div>
+
+                  <div className="fields-col-2">
+                    <div className="field-box">
+                      <label htmlFor="" className="field-label">
+                        Company
+                      </label>
+
+                      <input type="text" className="field-input" />
+                    </div>
+
+                    <div className="field-box">
+                      <label htmlFor="" className="field-label">
+                        Location
+                      </label>
+
+                      <input type="text" className="field-input" />
+                    </div>
+
+                    <div className="fields-button-box">
+                      <button className="button button--primary">
+                        Update Profile
+                      </button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-
-              <div className="field-box">
-                <label htmlFor="" className="field-label">
-                  Name
-                </label>
-
-                <input type="text" className="field-input" />
-              </div>
-
-              <div className="field-box">
-                <label htmlFor="" className="field-label">
-                  Email
-                </label>
-
-                <input type="text" className="field-input" />
-              </div>
-
-              <div className="field-box">
-                <label htmlFor="" className="field-label">
-                  Bio
-                </label>
-
-                <textarea rows="4" className="field-textarea" />
-              </div>
-
-              <div className="field-box">
-                <label htmlFor="" className="field-label">
-                  URL
-                </label>
-
-                <input type="text" className="field-input" />
-              </div>
-            </div>
-
-            <div className="fields-col-2">
-              <div className="field-box">
-                <label htmlFor="" className="field-label">
-                  Company
-                </label>
-
-                <input type="text" className="field-input" />
-              </div>
-
-              <div className="field-box">
-                <label htmlFor="" className="field-label">
-                  Location
-                </label>
-
-                <input type="text" className="field-input" />
-              </div>
-
-              <div className="fields-button-box">
-                <button className="button button--primary">Update Profile</button>
-              </div>
-            </div>
-          </div>
+              </animated.div>
+            )}
+          </Spring>
         </section>
 
         <div className="close-button-container">
-          <div className="close-button-box">
-            <svg className="close-button">
-              <use href="#settings-icon-close" />
-            </svg>
-          </div>
+          <Spring
+            delay={450}
+            native
+            from={{ transform: "translateY(-50vw)", opacity: "0" }}
+            to={{ transform: "translateY(0)", opacity: "1" }}
+          >
+            {props => (
+              <animated.div style={props} className="close-button-box">
+                <button>
+                  <svg className="close-button">
+                    <use href="#settings-icon-close" />
+                  </svg>
+                </button>
+              </animated.div>
+            )}
+          </Spring>
         </div>
       </StyledSettings>
     );
