@@ -100,7 +100,7 @@ const StyledSettings = styled.div`
       width: calc(${theme.unit} * 16);
       height: ${theme.size.lg};
       display: flex;
-      align-items: flex-end;
+      align-items: flex-start;
 
       &:not(:last-child) {
         /* border: 1px solid magenta; */
@@ -173,7 +173,9 @@ const StyledSettings = styled.div`
       justify-content: space-between;
 
       &:not(:last-child) {
-        margin-bottom: ${theme.space.md};
+        /* border: 1px solid magenta; */
+
+        margin-bottom: ${theme.space.lg};
       }
 
       .field-label {
@@ -198,6 +200,8 @@ const StyledSettings = styled.div`
     }
 
     .fields-button-box {
+      margin-top: -${theme.space.md};
+
       .field-button {
       }
     }
