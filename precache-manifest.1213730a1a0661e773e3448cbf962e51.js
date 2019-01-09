@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "39a73962fe92c378204ac96d1967eb04",
-    "url": "/project-ui-challenges/static/media/profile-02.39a73962.jpg"
+    "revision": "74104644f9fc3db63557e494d92776f3",
+    "url": "/project-ui-challenges/static/media/profile-03.74104644.jpg"
   },
   {
-    "revision": "12e89344df070c49b0ed",
-    "url": "/project-ui-challenges/static/css/main.98014989.chunk.css"
+    "revision": "e419170a5008d64c12ea",
+    "url": "/project-ui-challenges/static/css/main.61ce85d7.chunk.css"
   },
   {
-    "revision": "4280aa1731683ac80aec0c1aad5f1325",
-    "url": "/project-ui-challenges/static/media/tilda.4280aa17.jpg"
+    "revision": "b3c64d26898aaffd79a15f070da2dc39",
+    "url": "/project-ui-challenges/static/media/profile.b3c64d26.png"
   },
   {
-    "revision": "e5a63bc1a26a22f2d72b",
-    "url": "/project-ui-challenges/static/js/1.e5a63bc1.chunk.js"
+    "revision": "b5176a8daa8f27014b08",
+    "url": "/project-ui-challenges/static/js/1.b5176a8d.chunk.js"
   },
   {
     "revision": "5ac804dfdacf09501884",
@@ -32,12 +32,12 @@ self.__precacheManifest = [
     "url": "/project-ui-challenges/static/media/bg-dog.d4c14a83.png"
   },
   {
-    "revision": "12e89344df070c49b0ed",
-    "url": "/project-ui-challenges/static/js/main.12e89344.chunk.js"
+    "revision": "39a73962fe92c378204ac96d1967eb04",
+    "url": "/project-ui-challenges/static/media/profile-02.39a73962.jpg"
   },
   {
-    "revision": "74104644f9fc3db63557e494d92776f3",
-    "url": "/project-ui-challenges/static/media/profile-03.74104644.jpg"
+    "revision": "e419170a5008d64c12ea",
+    "url": "/project-ui-challenges/static/js/main.e419170a.chunk.js"
   },
   {
     "revision": "d4597e66a4f6f7b52fecc049ee3b6787",
@@ -60,11 +60,15 @@ self.__precacheManifest = [
     "url": "/project-ui-challenges/static/media/profile-11.3fa699ce.jpg"
   },
   {
-    "revision": "e5a63bc1a26a22f2d72b",
-    "url": "/project-ui-challenges/static/css/1.81955996.chunk.css"
+    "revision": "4280aa1731683ac80aec0c1aad5f1325",
+    "url": "/project-ui-challenges/static/media/tilda.4280aa17.jpg"
   },
   {
-    "revision": "e609bdfe68931c7e0e720e4f5e736d07",
+    "revision": "b5176a8daa8f27014b08",
+    "url": "/project-ui-challenges/static/css/1.60ea7b55.chunk.css"
+  },
+  {
+    "revision": "f0c41b6138a41bb564ff2b726e48fcbe",
     "url": "/project-ui-challenges/index.html"
   }
 ];
