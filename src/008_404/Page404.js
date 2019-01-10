@@ -27,7 +27,9 @@ const theme = {
 const GlobalStyle = createGlobalStyle`
   html, body, #root {
     width: 100%;
-    height: 100%;
+  }
+
+  #root {
   }
 
   * {
@@ -46,14 +48,22 @@ const GlobalStyle = createGlobalStyle`
 const StyledPage404 = styled.div`
   /* border: 1px solid magenta; */
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
+
   background-color: ${theme.color.white};
   padding: ${theme.space.md};
 
   display: grid;
+  grid-template-rows: auto max-content 1fr;
+  /* 
+  align-content: stretch; 
   align-items: flex-start;
-  /* justify-content: center; */
-  grid-template-rows: auto 1fr 1fr;
+  */
+
+  /* 
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between; */
 
   color: ${theme.color.primary.main};
 
@@ -243,6 +253,8 @@ export default class Page404 extends Component {
           <div className="burger-line" />
           <div className="burger-line" />
         </div>
+
+        {/* <div style={{ height: "10000px" }}>TEST</div> */}
       </StyledPage404>
     );
   }

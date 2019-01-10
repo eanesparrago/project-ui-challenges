@@ -5,15 +5,10 @@
   font-family: "Open Sans", sans-serif;
 }
 
-ul, li {
+ul,
+li {
   padding: 0;
   margin: 0;
-}
-
-@media only screen and (max-width: 600px) {
-  .app-menu {
-    /* padding: 1rem; */
-  }
 }
 
 .app-menu-title {
@@ -38,7 +33,6 @@ ul, li {
   line-height: 1.5;
 
   /* white-space: normal */
-  
 }
 
 .app-menu-list__item-date {
