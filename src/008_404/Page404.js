@@ -81,6 +81,9 @@ const StyledPage404 = styled.div`
     /* border: 1px solid magenta; */
     display: flex;
     flex-flow: column;
+    width: 100%;
+    max-width: 60em;
+    margin: 0 auto;
     margin-bottom: ${theme.space.md};
 
     .error-1-box {
