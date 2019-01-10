@@ -11,37 +11,7 @@ import Calculatey from "./004_calculatey/Calculatey";
 import Trevert from "./005_trevert/Trevert";
 import Elecy from "./006_elecy/Elecy";
 import Settings from "./007_settings/Settings";
-
-// const StyledApp = styled.div`
-//   .app-menu {
-//     padding: 5rem;
-//     background-color: #eff4fe;
-//     height: 100vh;
-//     font-family: "Open Sans", sans-serif;
-//   }
-//   @media only screen and (max-width: 600px) {
-//     .app-menu {
-//       padding: 1rem;
-//     }
-//   }
-
-//   .app-menu-title {
-//     font-weight: 100;
-//     font-size: 3rem;
-//   }
-
-//   .app-menu-list {
-//     padding: 0;
-//   }
-
-//   .app-menu-list__item {
-//     margin-bottom: 1rem;
-//   }
-
-//   .app-menu-list__item-date {
-//     margin-left: 1rem;
-//   }
-// `;
+import Page404 from "./008_404/Page404";
 
 export class App extends Component {
   render() {
@@ -68,7 +38,9 @@ export class App extends Component {
 
                       <li className="app-menu-list__item">
                         <Link to="/002">
-                          002. Orbital Skies (Credit Card Checkout)
+                          <span>
+                            002. Orbital Skies (Credit Card Checkout)
+                          </span>
                         </Link>
 
                         <span className="app-menu-list__item-date">
@@ -115,6 +87,14 @@ export class App extends Component {
                           January 8, 2019
                         </span>
                       </li>
+
+                      <li className="app-menu-list__item">
+                        <Link to="/008">008. 404</Link>
+
+                        <span className="app-menu-list__item-date">
+                          January 10, 2019
+                        </span>
+                      </li>
                     </ul>
                   </nav>
                 </div>
@@ -134,6 +114,8 @@ export class App extends Component {
             <Route path="/006" component={Elecy} />
 
             <Route path="/007" component={Settings} />
+
+            <Route path="/008" component={Page404} />
 
             <Route component={() => <div>404 Not found</div>} />
           </Switch>
