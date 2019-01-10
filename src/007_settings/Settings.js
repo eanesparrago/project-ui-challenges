@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import styled, { createGlobalStyle } from "styled-components";
 import profileImage from "./images/profile.png";
 import { Spring, animated } from "react-spring";
+import { withRouter } from "react-router-dom";
+
+const initialDelay = 0;
 
 const theme = {
   font: {
@@ -276,10 +279,10 @@ const StyledSettings = styled.div`
   }
 `;
 
-export default class Settings extends Component {
+class Settings extends Component {
   render() {
     return (
-      <StyledSettings>
+      <StyledSettings onClick={() => {}}>
         <GlobalStyle />
 
         <svg
@@ -310,7 +313,7 @@ export default class Settings extends Component {
 
         <nav className="sidebar-container">
           <Spring
-            delay={450}
+            delay={450 + initialDelay}
             native
             from={{ transform: "translateX(50vw)", opacity: "0" }}
             to={{ transform: "translateX(0)", opacity: "1" }}
@@ -351,6 +354,7 @@ export default class Settings extends Component {
 
         <div className="divider-box">
           <Spring
+            delay={initialDelay}
             native
             from={{ transform: "scaleY(0)" }}
             to={{ transform: "scaleY(1)" }}
@@ -361,7 +365,7 @@ export default class Settings extends Component {
 
         <section className="main-container">
           <Spring
-            delay={450}
+            delay={450 + initialDelay}
             native
             from={{ transform: "translateX(-50vw)", opacity: "0" }}
             to={{ transform: "translateX(0)", opacity: "1" }}
@@ -452,7 +456,7 @@ export default class Settings extends Component {
 
         <div className="close-button-container">
           <Spring
-            delay={450}
+            delay={450 + initialDelay}
             native
             from={{ transform: "translateY(-50vw)", opacity: "0" }}
             to={{ transform: "translateY(0)", opacity: "1" }}
@@ -472,3 +476,5 @@ export default class Settings extends Component {
     );
   }
 }
+
+export default withRouter(Settings);
