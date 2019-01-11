@@ -23,6 +23,12 @@ You can view the designs I came up with here: https://ljesp.github.io/project-ui
 ### Day 6: User Profile — "Elecy"
 *In this challenge I was inspired to make a super simple user profile interface. A lot of time was put into making the layout responsive in both mobile orientations. It's the first project I used grids in Figma for design which I believe helped in making a very solid layout (I used rows and columns in previous challenges).*
 
+### Day 7: Settings
+*For this challenge I wanted to make a modern UI for desktop that's friendly and easy on the eyes. The enter animation was enjoyable to make. The contents of this page came from GitHub's account settings.*
+
+### Day 8: 404 — "Payapa"
+*This one is very simple. The main focus in this layout is creating the design elements in pure HTML and CSS. It's my first time coding a design like this. The combination of designing with grids and coding with space and size variables really helped a lot.*
+
 ## Technologies
 ### React
   * create-react-app
