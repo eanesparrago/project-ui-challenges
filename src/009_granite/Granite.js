@@ -165,6 +165,7 @@ const StyledGranite = styled.div`
     /* border: 1px solid magenta; */
     padding: ${theme.space.md};
     position: relative;
+    height: 50vh;
     grid-column: 2 / -1;
 
     .artist-header-cover-image-box {
@@ -520,6 +521,7 @@ const StyledGranite = styled.div`
       align-items: end;
       grid-template-rows: auto auto;
       grid-template-columns: 1fr 1fr auto auto;
+      margin-right: ${theme.space.xs};
 
       .player-title-box {
         padding-bottom: ${theme.space.xxs};
@@ -942,15 +944,15 @@ export class Granite extends Component {
           <div className="player-wrapper">
             <div className="player-block">
               <div className="player-controls-container">
-                <div className="player-previous-box">
+                <button className="player-previous-box">
                   <IconSkipPrevious className="player-previous" />
-                </div>
-                <div className="player-play-box">
+                </button>
+                <button className="player-play-box">
                   <IconPlay className="player-play" />
-                </div>
-                <div className="player-next-box">
+                </button>
+                <button className="player-next-box">
                   <IconSkipNext className="player-next" />
-                </div>
+                </button>
               </div>
 
               <div className="player-content-container">
@@ -977,7 +979,7 @@ export class Granite extends Component {
                   </div>
 
                   <div className="player-duration-box">
-                    <span className="player-duration">0:00 / 5:40</span>
+                    <span className="player-duration">0:00 / 5:39</span>
                   </div>
 
                   <div className="player-trackbar-box">
