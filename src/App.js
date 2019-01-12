@@ -12,6 +12,7 @@ import Trevert from "./005_trevert/Trevert";
 import Elecy from "./006_elecy/Elecy";
 import Settings from "./007_settings/Settings";
 import Page404 from "./008_404/Page404";
+import Granite from "./009_granite/Granite";
 
 export class App extends Component {
   render() {
@@ -38,9 +39,7 @@ export class App extends Component {
 
                       <li className="app-menu-list__item">
                         <Link to="/002">
-                          <span>
-                            002. Orbital Skies (Credit Card Checkout)
-                          </span>
+                          <span>002. Orbital Skies (Credit Card Checkout)</span>
                         </Link>
 
                         <span className="app-menu-list__item-date">
@@ -89,10 +88,18 @@ export class App extends Component {
                       </li>
 
                       <li className="app-menu-list__item">
-                        <Link to="/008">008. 404</Link>
+                        <Link to="/008">008. Payapa (404)</Link>
 
                         <span className="app-menu-list__item-date">
                           January 10, 2019
+                        </span>
+                      </li>
+
+                      <li className="app-menu-list__item">
+                        <Link to="/009">009. Granite (Music Player)</Link>
+
+                        <span className="app-menu-list__item-date">
+                          January 12, 2019
                         </span>
                       </li>
                     </ul>
@@ -116,6 +123,8 @@ export class App extends Component {
             <Route path="/007" component={Settings} />
 
             <Route path="/008" component={Page404} />
+
+            <Route path="/009" component={Granite} />
 
             <Route component={() => <div>404 Not found</div>} />
           </Switch>
