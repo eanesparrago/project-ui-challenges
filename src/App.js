@@ -29,7 +29,7 @@ export class App extends Component {
                   <h1 className="app-menu-title">UI Challenges</h1>
 
                   <nav>
-                    <ul c lassName="app-menu-list">
+                    <ul className="app-menu-list">
                       <li className="app-menu-list__item">
                         <Link to="/001">001. Sentiment (Sign Up)</Link>
 
