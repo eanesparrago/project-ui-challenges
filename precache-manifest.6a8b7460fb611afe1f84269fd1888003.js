@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/project-ui-challenges/static/media/profile-06.3a94e390.jpg"
   },
   {
-    "revision": "4d51eefd15d10df395e7",
+    "revision": "d073aeceec72bd6a388e",
     "url": "/project-ui-challenges/static/css/main.10719588.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/project-ui-challenges/static/media/artist-rush-album-11.00293baa.jpg"
   },
   {
-    "revision": "6e6b2c84d61616db28f8",
-    "url": "/project-ui-challenges/static/js/1.6e6b2c84.chunk.js"
+    "revision": "2ebe4c57ef00b8f0885b",
+    "url": "/project-ui-challenges/static/js/1.2ebe4c57.chunk.js"
   },
   {
     "revision": "5ac804dfdacf09501884",
@@ -64,8 +64,8 @@ self.__precacheManifest = [
     "url": "/project-ui-challenges/static/media/profile-05.d4597e66.jpg"
   },
   {
-    "revision": "4d51eefd15d10df395e7",
-    "url": "/project-ui-challenges/static/js/main.4d51eefd.chunk.js"
+    "revision": "d073aeceec72bd6a388e",
+    "url": "/project-ui-challenges/static/js/main.d073aece.chunk.js"
   },
   {
     "revision": "70a29223ea9e9fe40242ec9330db4545",
@@ -120,11 +120,11 @@ self.__precacheManifest = [
     "url": "/project-ui-challenges/static/media/artist-rush-album-8.1954ee08.jpg"
   },
   {
-    "revision": "6e6b2c84d61616db28f8",
+    "revision": "2ebe4c57ef00b8f0885b",
     "url": "/project-ui-challenges/static/css/1.384be97e.chunk.css"
   },
   {
-    "revision": "55dc1c8106cf55f042b5554fc8497e81",
+    "revision": "d165af64be7fc9e83880e4af55316aac",
     "url": "/project-ui-challenges/index.html"
   }
 ];
