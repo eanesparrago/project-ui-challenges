@@ -50,6 +50,11 @@ You can view the designs I came up with here: https://ljesp.github.io/project-ui
 
 *This is one of the bigger UIs I've made. The challenge was to make a music player but I designed more of a Spotify-like site. Designing and coding each took a day.*
 
+### Day 10: Social Share
+<img src="https://user-images.githubusercontent.com/36854142/51086990-6b052080-1788-11e9-8973-519ab4b38f68.png" alt="Social Share" width="500"/>
+
+*A simpe social share button. I wasn't able to create the animation I originally intended which requires a more advanced use of React-Spring.*
+
 ## Technologies / Tools
 ### React
   * create-react-app
