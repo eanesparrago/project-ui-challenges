@@ -62,6 +62,7 @@ const StyledSocialShare = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
 
@@ -73,7 +74,7 @@ const StyledSocialShare = styled.div`
     position: relative;
 
     &:not(:last-child) {
-      margin-right: 10em;
+      margin-bottom: 15em;
     }
   }
 
