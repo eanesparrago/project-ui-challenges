@@ -13,6 +13,7 @@ import Elecy from "./006_elecy/Elecy";
 import Settings from "./007_settings/Settings";
 import Page404 from "./008_404/Page404";
 import Granite from "./009_granite/Granite";
+import SocialShare from "./010_social-share/SocialShare";
 
 export class App extends Component {
   render() {
@@ -102,6 +103,14 @@ export class App extends Component {
                           January 12, 2019
                         </span>
                       </li>
+
+                      <li className="app-menu-list__item">
+                        <Link to="/010">010. Social Share</Link>
+
+                        <span className="app-menu-list__item-date">
+                          January 13, 2019
+                        </span>
+                      </li>
                     </ul>
                   </nav>
                 </div>
@@ -125,6 +134,8 @@ export class App extends Component {
             <Route path="/008" component={Page404} />
 
             <Route path="/009" component={Granite} />
+
+            <Route path="/010" component={SocialShare} />
 
             <Route component={() => <div>404 Not found</div>} />
           </Switch>
