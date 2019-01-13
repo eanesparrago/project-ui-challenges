@@ -48,7 +48,7 @@ You can view the designs I came up with here: https://ljesp.github.io/project-ui
 ### Day 9: Music Player — "Granite" *(Desktop Only)*
 <img src="https://user-images.githubusercontent.com/36854142/51082568-7c2c3e00-1744-11e9-8a62-19f6e812e843.png" alt="Granite" width="500"/>
 
-*This is one of the bigger UIs I've made. The challange was to make a music player but I designed more of a Spotify-like site. Designing and coding each took a day.*
+*This is one of the bigger UIs I've made. The challenge was to make a music player but I designed more of a Spotify-like site. Designing and coding each took a day.*
 
 ## Technologies / Tools
 ### React
