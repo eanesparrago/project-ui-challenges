@@ -55,6 +55,11 @@ You can view the designs I came up with here: https://ljesp.github.io/project-ui
 
 *A simpe social share button. I wasn't able to create the animation I originally intended which requires a more advanced use of React-Spring.*
 
+### Day 11: Flash Message
+<img src="https://user-images.githubusercontent.com/36854142/51126021-023ba800-185d-11e9-9cfd-84052f111c8d.png" alt="Flash Message" width="500"/>
+
+*Creating this was delightful all throughout. Absolute positioning was heavily used to layout the design elements. This one is fully responsive!*
+
 ## Technologies / Tools
 ### React
   * create-react-app
