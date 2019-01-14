@@ -101,6 +101,7 @@ const StyledSocialShare = styled.div`
     padding: ${theme.space.sm};
     position: absolute;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    pointer-events: ${props => props.isShareDialogOpen ? "auto" : "none"};
   }
 
   .share-header-container {
@@ -188,7 +189,7 @@ export class SocialShare extends Component {
 
   render() {
     return (
-      <StyledSocialShare>
+      <StyledSocialShare isShareDialogOpen={this.state.isShareDialogOpen}>
         <GlobalStyle />
 
         <div className="share-container">
