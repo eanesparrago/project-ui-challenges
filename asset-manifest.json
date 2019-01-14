@@ -1,7 +1,7 @@
 {
   "main.css": "/project-ui-challenges/static/css/main.10719588.chunk.css",
-  "main.js": "/project-ui-challenges/static/js/main.d073aece.chunk.js",
-  "main.js.map": "/project-ui-challenges/static/js/main.d073aece.chunk.js.map",
+  "main.js": "/project-ui-challenges/static/js/main.a940d5c2.chunk.js",
+  "main.js.map": "/project-ui-challenges/static/js/main.a940d5c2.chunk.js.map",
   "static/css/1.384be97e.chunk.css": "/project-ui-challenges/static/css/1.384be97e.chunk.css",
   "static/js/1.2ebe4c57.chunk.js": "/project-ui-challenges/static/js/1.2ebe4c57.chunk.js",
   "static/js/1.2ebe4c57.chunk.js.map": "/project-ui-challenges/static/js/1.2ebe4c57.chunk.js.map",
@@ -33,9 +33,9 @@
   "static/media/artist-rush-album-7.jpg": "/project-ui-challenges/static/media/artist-rush-album-7.53b03519.jpg",
   "static/media/artist-rush-album-8.jpg": "/project-ui-challenges/static/media/artist-rush-album-8.1954ee08.jpg",
   "static/media/artist-rush-album-11.jpg": "/project-ui-challenges/static/media/artist-rush-album-11.00293baa.jpg",
-  "static/css/main.10719588.chunk.css.map": "/project-ui-challenges/static/css/main.10719588.chunk.css.map",
   "static/css/1.384be97e.chunk.css.map": "/project-ui-challenges/static/css/1.384be97e.chunk.css.map",
+  "static/css/main.10719588.chunk.css.map": "/project-ui-challenges/static/css/main.10719588.chunk.css.map",
   "index.html": "/project-ui-challenges/index.html",
-  "precache-manifest.6a8b7460fb611afe1f84269fd1888003.js": "/project-ui-challenges/precache-manifest.6a8b7460fb611afe1f84269fd1888003.js",
+  "precache-manifest.4be05ab63515d0f5c98fc1e802d2ad00.js": "/project-ui-challenges/precache-manifest.4be05ab63515d0f5c98fc1e802d2ad00.js",
   "service-worker.js": "/project-ui-challenges/service-worker.js"
 }
