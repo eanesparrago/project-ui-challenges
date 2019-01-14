@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import "sanitize.css";
-import styled from "styled-components";
 import "./app.css";
 
 import Sentiment from "./001_sentiment/Sentiment";

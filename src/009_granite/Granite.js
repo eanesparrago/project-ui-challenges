@@ -19,12 +19,9 @@ import albumMovingImage from "./images/artist-rush-album-moving.jpg";
 
 import IconAdd from "./svgs/IconAdd";
 import IconAddNew from "./svgs/IconAddNew";
-import IconAddCircle from "./svgs/IconAddCircle";
-import IconMore from "./svgs/IconMore";
 import IconMoreNew from "./svgs/IconMoreNew";
 import IconPlay from "./svgs/IconPlay";
 import IconPlayNew from "./svgs/IconPlayNew";
-import IconPlayCircle from "./svgs/IconPlayCircle";
 import IconRepeat from "./svgs/IconRepeat";
 import IconSearch from "./svgs/IconSearch";
 import IconShuffle from "./svgs/IconShuffle";

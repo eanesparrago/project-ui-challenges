@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled, { createGlobalStyle } from "styled-components";
-import { Spring, Transition, animated } from "react-spring";
+import {  Transition, animated } from "react-spring";
 
 const theme = {
   font: {

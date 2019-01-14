@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
-import { Spring, Transition, animated } from "react-spring";
+import { Spring, animated } from "react-spring";
 import TextFit from "react-textfit";
 
 import imageTilda from "./images/tilda.jpg";
@@ -318,7 +318,7 @@ export default class Elecy extends Component {
                     <img
                       className="person-photo"
                       src={imageTilda}
-                      alt="Profile photo"
+                      alt="Profile"
                     />
                   </button>
                 </div>
