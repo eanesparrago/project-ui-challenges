@@ -3,7 +3,7 @@ I've subscribed to the daily UI challenges from http://www.dailyui.co/ to improv
 
 You can view the designs I came up with here: https://ljesp.github.io/project-ui-challenges/
 
-*Note that the focus of these challenges is the UI. Although I sometimes add functionality, some of the results' functionality may be either missing, incomplete, or buggy. Also, not all are mobile responsive.*
+*Note that the focus of these challenges is the UI. Although I sometimes add functionality, some of the results' functionality may be either missing, incomplete, or buggy. Also, not designs aren't fully responsive. Fake brands a designed for some challenges.*
 
 ### Day 1: Sign Up — "Sentiment"
 <img src="https://user-images.githubusercontent.com/36854142/51082410-46398a80-1741-11e9-93a3-67de1e8f2d72.png" alt="Sentiment" width="500"/>
