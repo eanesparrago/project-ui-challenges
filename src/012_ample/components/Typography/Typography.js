@@ -5,10 +5,10 @@ import textCrop from "../../utils/textCrop";
 const StyledTypographyBody = styled.p`
   ${textCrop()};
 
+  /* border: 1px solid magenta; */
   font-family: inherit;
   font-size: 1em;
   line-height: var(--line-height);
-  border: 1px solid magenta;
 `;
 
 const Typography = (props, { variant }) => {
