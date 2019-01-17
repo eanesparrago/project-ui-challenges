@@ -14,6 +14,7 @@ import Page404 from "./008_404/Page404";
 import Granite from "./009_granite/Granite";
 import SocialShare from "./010_social-share/SocialShare";
 import FlashMessage from "./011_flash-message/FlashMessage";
+import Ample from "./012_ample/Ample";
 
 export class App extends Component {
   render() {
@@ -119,6 +120,14 @@ export class App extends Component {
                           January 14, 2019
                         </span>
                       </li>
+
+                      <li className="app-menu-list__item">
+                        <Link to="/012">012. Ample</Link>
+
+                        <span className="app-menu-list__item-date">
+                          January 17, 2019
+                        </span>
+                      </li>
                     </ul>
                   </nav>
                 </div>
@@ -146,6 +155,8 @@ export class App extends Component {
             <Route path="/010" component={SocialShare} />
             
             <Route path="/011" component={FlashMessage} />
+
+            <Route path="/012" component={Ample} />
 
             <Route component={() => <div>404 Not found</div>} />
           </Switch>
