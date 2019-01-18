@@ -25,7 +25,9 @@ const theme = {
 
 const GlobalStyle = createGlobalStyle`
   :root {
+    --color-primary: ${theme.color.primary};
     --color-black: ${theme.color.black};
+    --color-white: ${theme.color.white};
     --font-family-primary: ${theme.font.primary};
     --font-size: 16px;
     --margin-base: ${theme.size.em(24)};
@@ -122,7 +124,13 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     text-align: left;
     cursor: pointer;
+
+    :focus {
+      outline: none;
+    }
   }
 `;
 
 export default GlobalStyle;
+
+export { theme };

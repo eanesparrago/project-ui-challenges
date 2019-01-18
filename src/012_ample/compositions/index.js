@@ -1,4 +1,4 @@
 import Header from "./Header/Header";
-import ProductPage from "./ProductPage/ProductPage";
+import ProductSection from "./ProductSection/ProductSection";
 
-export { Header, ProductPage };
+export { Header, ProductSection };

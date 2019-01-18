@@ -10,13 +10,23 @@ const StyledButton = styled.button`
   text-transform: uppercase;
   letter-spacing: 0.08em;
   padding: var(--space-squish-m);
-
-  :focus {
-    outline: none;
-  }
 `;
 
 const StyledButtonIcon = styled.button``;
+
+const StyledButtonFill = styled.button`
+  background-color: var(--color-primary);
+  padding: var(--space-squish-l);
+  border-radius: ${props => props.theme.size.xs};
+  color: ${props => props.theme.color.white};
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+`;
 
 export class Button extends Component {
   render() {
@@ -24,6 +34,9 @@ export class Button extends Component {
     switch (variant) {
       case "icon":
         return <StyledButtonIcon>{this.props.children}</StyledButtonIcon>;
+
+      case "fill":
+        return <StyledButtonFill>{this.props.children}</StyledButtonFill>;
 
       default:
         return <StyledButton>{this.props.children}</StyledButton>;
