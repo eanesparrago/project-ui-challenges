@@ -12,7 +12,7 @@ import {
 import ProductTitle from "./ProductTitle";
 
 const StyledProductSection = styled.main`
-  border: 1px solid cyan;
+  /* border: 1px solid cyan; */
   height: 100%;
   display: grid;
   grid-template-columns: calc(100% / 1.618) ${props => props.theme.size.xl} 1fr;
@@ -24,7 +24,23 @@ const StyledProductSection = styled.main`
     grid-row: 1;
     position: relative;
     padding: var(--space-inset-l);
-    overflow: hidden;
+    /* overflow: hidden; */
+    display: grid;
+    grid-template-rows: min-content 1fr;
+
+
+    .showcase-title-box {
+      /* border: 1px solid magenta; */
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .showcase-title {
+      transform-origin: left bottom;
+      transform: rotate(-90deg) translateY(100%);
+      font-size: 1.75em;
+      color: var(--color-white);
+    }
   }
 
   .product-image {
@@ -37,7 +53,7 @@ const StyledProductSection = styled.main`
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: -1;
+    z-index: -10;
   }
 
   .content_container {
@@ -134,18 +150,27 @@ export class ProductSection extends Component {
         <div className="showcase_container">
           <img className="product-image" src={productImage} alt="Product" />
 
-          <svg
-            width="64"
-            height="64"
-            viewBox="0 0 64 64"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M53.3334 29.3333H20.88L35.7867 14.4267L32 10.6667L10.6667 32L32 53.3333L35.76 49.5733L20.88 34.6667H53.3334V29.3333Z"
-              fill="white"
-            />
-          </svg>
+          <Button variant="container">
+            <svg
+              className="back"
+              width="64"
+              height="64"
+              viewBox="0 0 64 64"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M53.3334 29.3333H20.88L35.7867 14.4267L32 10.6667L10.6667 32L32 53.3333L35.76 49.5733L20.88 34.6667H53.3334V29.3333Z"
+                fill="white"
+              />
+            </svg>
+          </Button>
+
+          <div className="showcase-title-box">
+            <Typography className="showcase-title">
+              Tomato Soup Sweater
+            </Typography>
+          </div>
         </div>
 
         <div className="content_container">
@@ -161,7 +186,7 @@ export class ProductSection extends Component {
 
           <div className="showcase-control_container">
             <div className="star-box">
-              <Button variant="icon">
+              <Button variant="container">
                 <svg
                   width="32"
                   height="32"

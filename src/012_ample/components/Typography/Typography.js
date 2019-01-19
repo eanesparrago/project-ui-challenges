@@ -17,16 +17,24 @@ const StyledTypographyPrice = styled.span`
   font-weight: 300;
 `;
 
-const Typography = (props) => {
+const Typography = props => {
   switch (props.variant) {
     case "body":
-      return <StyledTypographyBody>{props.children}</StyledTypographyBody>;
+      return (
+        <StyledTypographyBody {...props}>{props.children}</StyledTypographyBody>
+      );
 
     case "price":
-      return <StyledTypographyPrice>{props.children}</StyledTypographyPrice>;
+      return (
+        <StyledTypographyPrice {...props}>
+          {props.children}
+        </StyledTypographyPrice>
+      );
 
     default:
-      return <StyledTypographyBody>{props.children}</StyledTypographyBody>;
+      return (
+        <StyledTypographyBody {...props}>{props.children}</StyledTypographyBody>
+      );
   }
 };
 

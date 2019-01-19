@@ -12,7 +12,9 @@ const StyledButton = styled.button`
   padding: var(--space-squish-m);
 `;
 
-const StyledButtonIcon = styled.button``;
+const StyledButtonContainer = styled.div`
+  cursor: pointer;
+`;
 
 const StyledButtonFill = styled.button`
   background-color: var(--color-primary);
@@ -32,8 +34,10 @@ export class Button extends Component {
   render() {
     const { variant } = this.props;
     switch (variant) {
-      case "icon":
-        return <StyledButtonIcon>{this.props.children}</StyledButtonIcon>;
+      case "container":
+        return (
+          <StyledButtonContainer>{this.props.children}</StyledButtonContainer>
+        );
 
       case "fill":
         return <StyledButtonFill>{this.props.children}</StyledButtonFill>;

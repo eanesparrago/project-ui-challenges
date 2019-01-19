@@ -18,8 +18,7 @@ const theme = {
     em: px => `${px / 16}em`
   },
   breakpoint: {
-    sm: "600px",
-    md: "960px"
+    first: "1300px"
   }
 };
 
