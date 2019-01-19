@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/project-ui-challenges/static/media/profile-06.3a94e390.jpg"
   },
   {
-    "revision": "a940d5c283f498cabb03",
-    "url": "/project-ui-challenges/static/css/main.10719588.chunk.css"
+    "revision": "fe74deb7c403a204aa7c",
+    "url": "/project-ui-challenges/static/css/main.00efd1cc.chunk.css"
   },
   {
-    "revision": "00293baa4c7294db71be078550e27bc9",
-    "url": "/project-ui-challenges/static/media/artist-rush-album-11.00293baa.jpg"
+    "revision": "ff2471126e76bf6e00a220316e2fb6a5",
+    "url": "/project-ui-challenges/static/media/product-image.ff247112.jpg"
   },
   {
-    "revision": "2ebe4c57ef00b8f0885b",
-    "url": "/project-ui-challenges/static/js/1.2ebe4c57.chunk.js"
+    "revision": "1993772160b080a986ef",
+    "url": "/project-ui-challenges/static/js/1.19937721.chunk.js"
   },
   {
     "revision": "5ac804dfdacf09501884",
@@ -64,8 +64,8 @@ self.__precacheManifest = [
     "url": "/project-ui-challenges/static/media/profile-05.d4597e66.jpg"
   },
   {
-    "revision": "a940d5c283f498cabb03",
-    "url": "/project-ui-challenges/static/js/main.a940d5c2.chunk.js"
+    "revision": "fe74deb7c403a204aa7c",
+    "url": "/project-ui-challenges/static/js/main.fe74deb7.chunk.js"
   },
   {
     "revision": "70a29223ea9e9fe40242ec9330db4545",
@@ -120,11 +120,15 @@ self.__precacheManifest = [
     "url": "/project-ui-challenges/static/media/artist-rush-album-8.1954ee08.jpg"
   },
   {
-    "revision": "2ebe4c57ef00b8f0885b",
-    "url": "/project-ui-challenges/static/css/1.384be97e.chunk.css"
+    "revision": "00293baa4c7294db71be078550e27bc9",
+    "url": "/project-ui-challenges/static/media/artist-rush-album-11.00293baa.jpg"
   },
   {
-    "revision": "1d258199e329c1747de638683ce8c9da",
+    "revision": "1993772160b080a986ef",
+    "url": "/project-ui-challenges/static/css/1.c7855fbb.chunk.css"
+  },
+  {
+    "revision": "0b0866c8ee8e950fb7d03e98b033203e",
     "url": "/project-ui-challenges/index.html"
   }
 ];
