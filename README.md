@@ -60,6 +60,14 @@ You can view the designs I came up with here: https://ljesp.github.io/project-ui
 
 *Creating this was delightful all throughout. Absolute positioning was heavily used to layout the design elements. This one is fully responsive!*
 
+### Day 12: E-Commerce Shop (Single Item) — "Ample" *(Desktop Only)*
+<img src="https://user-images.githubusercontent.com/36854142/51426366-907ca900-1c24-11e9-854e-b8aba395c440.png" alt="Flash Message" width="500"/>
+
+[Figma Project](https://www.figma.com/file/DrBjhsmBo1o3gyh3bvQSpAFS/012_e-commerce-shop_ample?node-id=7%3A0)
+
+*It took me a couple of days to design this interface with reponsive layouts for different screen size. I only coded the desktop layout of the interface since I realized that it would require more commitment i.e. it need to be a separate project. I would love to develop the entirety of this UI in the future.*
+
+
 ## Technologies / Tools
 ### React
   * create-react-app
