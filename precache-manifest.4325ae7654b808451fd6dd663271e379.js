@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/project-ui-challenges/static/media/profile-10.9f9efc2d.jpg"
   },
   {
-    "revision": "cc626fc3fe2e475800d9",
+    "revision": "bf972ed66c6a9eac5315",
     "url": "/project-ui-challenges/static/css/main.ebe34559.chunk.css"
   },
   {
@@ -72,8 +72,8 @@ self.__precacheManifest = [
     "url": "/project-ui-challenges/static/media/profile-08.70a29223.jpg"
   },
   {
-    "revision": "cc626fc3fe2e475800d9",
-    "url": "/project-ui-challenges/static/js/main.cc626fc3.chunk.js"
+    "revision": "bf972ed66c6a9eac5315",
+    "url": "/project-ui-challenges/static/js/main.bf972ed6.chunk.js"
   },
   {
     "revision": "3fa699ce54c497fe7280729ff4670fc7",
@@ -140,7 +140,7 @@ self.__precacheManifest = [
     "url": "/project-ui-challenges/static/css/1.c9ada4c2.chunk.css"
   },
   {
-    "revision": "31b836c8441c1e7f7603164a4c7fa9b9",
+    "revision": "7318659b4ea9fa7699889befa1880eef",
     "url": "/project-ui-challenges/index.html"
   }
 ];
