@@ -379,16 +379,14 @@ const StyledDusk = styled.div`
 export class Dusk extends Component {
   render() {
     return (
-      <Router>
-        <ThemeProvider theme={theme}>
-          <StyledDusk>
-            <GlobalStyle />
+      <ThemeProvider theme={theme}>
+        <StyledDusk>
+          <GlobalStyle />
 
-            <Route exact path="/013" component={Home} />
-            <Route path="/013/chat" component={Chat} />
-          </StyledDusk>
-        </ThemeProvider>
-      </Router>
+          <Route exact path="/013" component={Home} />
+          <Route path="/013/chat" component={Chat} />
+        </StyledDusk>
+      </ThemeProvider>
     );
   }
 }
