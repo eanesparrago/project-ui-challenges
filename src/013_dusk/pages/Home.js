@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import avatar0 from "../images/avatar-0.jpg";
 import avatar1 from "../images/avatar-2-corey.jpg";
 import avatar2 from "../images/avatar-1-dina.jpg";
@@ -30,9 +31,9 @@ export class Home extends Component {
             <div className="avatar__status" />
           </div>
 
-          <span className="title">dusk</span>
+          <span className="header__title">dusk</span>
 
-          <div className="header__search">
+          <div className="header__secondary-button">
             <div className="button">
               <svg
                 className="button__svg"
@@ -49,25 +50,27 @@ export class Home extends Component {
         </header>
 
         <main className="main">
-          <div className="chat-container">
-            <div className="chat-container__avatar-box">
-              <div className="avatar">
-                <div className="avatar__img-box">
-                  <img
-                    src={avatar1}
-                    alt="Profile avatar"
-                    className="avatar__img"
-                  />
+          <Link to="/013/chat">
+            <div className="chat-container">
+              <div className="chat-container__avatar-box">
+                <div className="avatar">
+                  <div className="avatar__img-box">
+                    <img
+                      src={avatar1}
+                      alt="Profile avatar"
+                      className="avatar__img"
+                    />
+                  </div>
+
+                  <div className="avatar__status" />
                 </div>
-
-                <div className="avatar__status" />
               </div>
-            </div>
 
-            <div className="chat-container__name">Corey Haim</div>
-            <div className="chat-container__time">Now</div>
-            <div className="chat-container__message">You: Nothing</div>
-          </div>
+              <div className="chat-container__name">Corey Haim</div>
+              <div className="chat-container__time">Now</div>
+              <div className="chat-container__message">You: Nothing</div>
+            </div>
+          </Link>
 
           <div className="chat-container">
             <div className="chat-container__status" />

@@ -49,6 +49,11 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: ${theme.font.primary}
   }
+
+  a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+  }
 `;
 
 const StyledDusk = styled.div`
@@ -65,11 +70,36 @@ const StyledDusk = styled.div`
     color: ${theme.color.white};
     display: grid;
     justify-content: space-between;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr max-content 1fr;
     align-items: center;
     padding: ${theme.size.m};
 
-    &__search {
+    &__title-box {
+      /* border: 1px solid magenta; */
+      display: flex;
+      align-items: center;
+    }
+
+    &__status {
+      width: ${theme.size.s};
+      height: ${theme.size.s};
+      background-color: ${theme.color.active};
+      border-radius: 1000em;
+    }
+
+    &__title {
+      ${textCrop()};
+      font-size: 1.75em;
+      justify-self: center;
+      letter-spacing: 0.08em;
+    }
+
+    &__title--chat {
+      letter-spacing: 0;
+      margin-right: ${theme.size.xs};
+    }
+
+    &__secondary-button {
       /* border: 1px solid magenta; */
       justify-self: end;
     }
@@ -113,12 +143,7 @@ const StyledDusk = styled.div`
     }
   }
 
-  .title {
-    ${textCrop()};
-    font-size: 1.75em;
-    justify-self: center;
-    letter-spacing: 0.08em;
-  }
+
 
   .button {
     width: ${theme.em(48)};
@@ -149,6 +174,7 @@ const StyledDusk = styled.div`
     /* Track */
     ::-webkit-scrollbar-track {
       background: ${theme.color.grey[800]}; 
+
     }
 
     /* Handle */
@@ -235,11 +261,25 @@ const StyledDusk = styled.div`
     bottom: 0;
     left: 0;
     width: 100%;
-    height: ${theme.size.xl};
+    height: calc(${theme.size.xl} + 1px);
     background-color: ${theme.color.black};
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .bottom-nav-2 {
+    /* border: 1px solid cyan; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: calc(${theme.size.xl} + 1px);
+    background-color: ${theme.color.black};
+    display: grid;
+    grid-template-columns: ${theme.size.xl} 1fr ${theme.size.xl};
     justify-items: center;
     align-items: center;
   }
@@ -264,12 +304,75 @@ const StyledDusk = styled.div`
     }
 
     &__counter {
+      font-weight: 700;
     }
 
     &--active {
       background-color: ${theme.color.white};
       color: ${theme.color.black};
     }
+  }
+
+  .nav-item {
+    /* border: 1px solid magenta; */
+    color: ${theme.color.white};
+    justify-self: start;
+
+  span {
+    white-space: nowrap;
+  }
+    
+  }
+
+  .message-box {
+    margin-left: ${theme.size.m};
+    margin-right: ${theme.size.m};
+    color: ${theme.color.white};
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: ${theme.size.s};
+    justify-items: start;
+    justify-content: start;
+    align-items: start;
+    margin-bottom: ${theme.size.m};
+
+    &--self {
+      grid-template-columns: auto;
+      justify-content: end;
+      justify-items: end;
+      margin-left: ${theme.em(48)};
+      margin-bottom: ${theme.size.s};
+    }
+
+    &--last {
+      margin-bottom: ${theme.size.m};
+    }
+  }
+
+  .message-text {
+    background-color: ${theme.color.grey[800]};
+    padding: ${theme.size.s} ${theme.size.m};
+    padding-bottom: ${theme.size.m};
+    border-radius: ${theme.em(4)};
+
+    &__text {
+      ${textCrop()};
+    }
+
+    &--emoji {
+      background-color: unset;
+    }
+
+    &--update {
+      background-color: unset;
+      padding: 0;
+      font-style: italic;
+    }
+  }
+
+  .emoji {
+    width: ${theme.size.l};
+    height: auto;
   }
 `;
 
@@ -281,7 +384,7 @@ export class Dusk extends Component {
           <StyledDusk>
             <GlobalStyle />
 
-            <Route path="/013" component={Home} />
+            <Route exact path="/013" component={Home} />
             <Route path="/013/chat" component={Chat} />
           </StyledDusk>
         </ThemeProvider>
