@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "3a94e390f1bc1acc70f75c57376b854d",
-    "url": "/project-ui-challenges/static/media/profile-06.3a94e390.jpg"
+    "revision": "9f9efc2db2da8dca9bc4419c23577289",
+    "url": "/project-ui-challenges/static/media/profile-10.9f9efc2d.jpg"
   },
   {
-    "revision": "fe74deb7c403a204aa7c",
-    "url": "/project-ui-challenges/static/css/main.00efd1cc.chunk.css"
+    "revision": "220e240d05af0ef0adfa",
+    "url": "/project-ui-challenges/static/css/main.ebe34559.chunk.css"
   },
   {
-    "revision": "ff2471126e76bf6e00a220316e2fb6a5",
-    "url": "/project-ui-challenges/static/media/product-image.ff247112.jpg"
+    "revision": "5afa19ceb168c145b3132801f3663b0c",
+    "url": "/project-ui-challenges/static/media/emoji.5afa19ce.png"
   },
   {
-    "revision": "1993772160b080a986ef",
-    "url": "/project-ui-challenges/static/js/1.19937721.chunk.js"
+    "revision": "a3fe398c4aca6e63a3fa",
+    "url": "/project-ui-challenges/static/js/1.a3fe398c.chunk.js"
   },
   {
     "revision": "5ac804dfdacf09501884",
@@ -64,16 +64,16 @@ self.__precacheManifest = [
     "url": "/project-ui-challenges/static/media/profile-05.d4597e66.jpg"
   },
   {
-    "revision": "fe74deb7c403a204aa7c",
-    "url": "/project-ui-challenges/static/js/main.fe74deb7.chunk.js"
+    "revision": "3a94e390f1bc1acc70f75c57376b854d",
+    "url": "/project-ui-challenges/static/media/profile-06.3a94e390.jpg"
   },
   {
     "revision": "70a29223ea9e9fe40242ec9330db4545",
     "url": "/project-ui-challenges/static/media/profile-08.70a29223.jpg"
   },
   {
-    "revision": "9f9efc2db2da8dca9bc4419c23577289",
-    "url": "/project-ui-challenges/static/media/profile-10.9f9efc2d.jpg"
+    "revision": "220e240d05af0ef0adfa",
+    "url": "/project-ui-challenges/static/js/main.220e240d.chunk.js"
   },
   {
     "revision": "3fa699ce54c497fe7280729ff4670fc7",
@@ -124,11 +124,23 @@ self.__precacheManifest = [
     "url": "/project-ui-challenges/static/media/artist-rush-album-11.00293baa.jpg"
   },
   {
-    "revision": "1993772160b080a986ef",
-    "url": "/project-ui-challenges/static/css/1.c7855fbb.chunk.css"
+    "revision": "ff2471126e76bf6e00a220316e2fb6a5",
+    "url": "/project-ui-challenges/static/media/product-image.ff247112.jpg"
   },
   {
-    "revision": "0b0866c8ee8e950fb7d03e98b033203e",
+    "revision": "e549dd5ef16edad78bae3cf8d7cbdd33",
+    "url": "/project-ui-challenges/static/media/avatar-0.e549dd5e.jpg"
+  },
+  {
+    "revision": "2e267bca5b7d4369cfaa14c37f7b9a36",
+    "url": "/project-ui-challenges/static/media/avatar-1-dina.2e267bca.jpg"
+  },
+  {
+    "revision": "a3fe398c4aca6e63a3fa",
+    "url": "/project-ui-challenges/static/css/1.c9ada4c2.chunk.css"
+  },
+  {
+    "revision": "b6749e9136e016ff1557d40b14238568",
     "url": "/project-ui-challenges/index.html"
   }
 ];
