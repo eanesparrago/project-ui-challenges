@@ -5,8 +5,8 @@ import avatar1 from "../images/avatar-2-corey.jpg";
 import imageEmoji from "../images/emoji.png";
 
 const StyledChat = styled.div`
-  width: 320px;
-  height: 568px;
+  width: 100%;
+  height: 100%;
   display: grid;
   grid-template-rows: auto 1fr;
   overflow: hidden;

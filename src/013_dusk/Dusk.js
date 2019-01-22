@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
@@ -62,9 +62,14 @@ const StyledDusk = styled.div`
   height: 568px;
   background-color: ${theme.color.black};
 
+  @media (max-width: 52.5em) {
+    width: 100%;
+    height: 100%;
+  }
+
   .header {
     /* border: 1px solid cyan; */
-    width: ${theme.em(320)};
+    width: 100%
     height: ${theme.em(80)};
     background-color: ${theme.color.black};
     color: ${theme.color.white};
@@ -380,12 +385,22 @@ export class Dusk extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
-        <StyledDusk>
-          <GlobalStyle />
+        <Fragment>
+          <StyledDusk
+          // style={{marginRight: "1em"}}
+          >
+            <GlobalStyle />
 
-          <Route exact path="/013" component={Home} />
-          <Route path="/013/chat" component={Chat} />
-        </StyledDusk>
+            <Route exact path="/013" component={Home} />
+            <Route path="/013/chat" component={Chat} />
+          </StyledDusk>
+
+          {/* <StyledDusk>
+            <GlobalStyle />
+
+            <Route path="/013" component={Chat} />
+          </StyledDusk> */}
+        </Fragment>
       </ThemeProvider>
     );
   }

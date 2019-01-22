@@ -10,12 +10,15 @@ import avatar5 from "../images/avatar-5-adam.jpg";
 import avatar6 from "../images/avatar-6-christina.jpg";
 
 const StyledHome = styled.div`
-  width: 320px;
-  height: 568px;
+  /* width: 320px;
+  height: 568px; */
   display: grid;
   grid-template-rows: auto 1fr;
   overflow: hidden;
   position: relative;
+
+  width: 100%;
+  height: 100%;
 `;
 
 export class Home extends Component {
