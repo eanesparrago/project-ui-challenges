@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "9f9efc2db2da8dca9bc4419c23577289",
-    "url": "/project-ui-challenges/static/media/profile-10.9f9efc2d.jpg"
+    "revision": "53061ee5c7c999807e5b85aa7805cfe5",
+    "url": "/project-ui-challenges/static/media/artist-rush-cover.53061ee5.jpg"
   },
   {
-    "revision": "bf972ed66c6a9eac5315",
-    "url": "/project-ui-challenges/static/css/main.ebe34559.chunk.css"
+    "revision": "59edefc3c7522c666d3d",
+    "url": "/project-ui-challenges/static/css/main.2dc25710.chunk.css"
   },
   {
-    "revision": "5afa19ceb168c145b3132801f3663b0c",
-    "url": "/project-ui-challenges/static/media/emoji.5afa19ce.png"
+    "revision": "5bb97981d07457d7070bfa7700d3f9c9",
+    "url": "/project-ui-challenges/static/media/sigil-thumb-8-tully.5bb97981.png"
   },
   {
-    "revision": "a3fe398c4aca6e63a3fa",
-    "url": "/project-ui-challenges/static/js/1.a3fe398c.chunk.js"
+    "revision": "7aa21150f239fb71ae44",
+    "url": "/project-ui-challenges/static/js/1.7aa21150.chunk.js"
   },
   {
     "revision": "5ac804dfdacf09501884",
@@ -72,8 +72,8 @@ self.__precacheManifest = [
     "url": "/project-ui-challenges/static/media/profile-08.70a29223.jpg"
   },
   {
-    "revision": "bf972ed66c6a9eac5315",
-    "url": "/project-ui-challenges/static/js/main.bf972ed6.chunk.js"
+    "revision": "9f9efc2db2da8dca9bc4419c23577289",
+    "url": "/project-ui-challenges/static/media/profile-10.9f9efc2d.jpg"
   },
   {
     "revision": "3fa699ce54c497fe7280729ff4670fc7",
@@ -88,8 +88,8 @@ self.__precacheManifest = [
     "url": "/project-ui-challenges/static/media/profile.b3c64d26.png"
   },
   {
-    "revision": "53061ee5c7c999807e5b85aa7805cfe5",
-    "url": "/project-ui-challenges/static/media/artist-rush-cover.53061ee5.jpg"
+    "revision": "59edefc3c7522c666d3d",
+    "url": "/project-ui-challenges/static/js/main.59edefc3.chunk.js"
   },
   {
     "revision": "86b53ba6432135ea034e9f4539fd3e47",
@@ -136,11 +136,47 @@ self.__precacheManifest = [
     "url": "/project-ui-challenges/static/media/avatar-1-dina.2e267bca.jpg"
   },
   {
-    "revision": "a3fe398c4aca6e63a3fa",
-    "url": "/project-ui-challenges/static/css/1.c9ada4c2.chunk.css"
+    "revision": "5afa19ceb168c145b3132801f3663b0c",
+    "url": "/project-ui-challenges/static/media/emoji.5afa19ce.png"
   },
   {
-    "revision": "7318659b4ea9fa7699889befa1880eef",
+    "revision": "463e919e9ed53a70dc0114ebd9d27c55",
+    "url": "/project-ui-challenges/static/media/sigil-1-stark.463e919e.png"
+  },
+  {
+    "revision": "e94e334c478d553850f08c93bccc6b28",
+    "url": "/project-ui-challenges/static/media/sigil-thumb-1-stark.e94e334c.png"
+  },
+  {
+    "revision": "7453cb24dbacaa7ab39de7ed86e9bb79",
+    "url": "/project-ui-challenges/static/media/sigil-thumb-2-lannister.7453cb24.png"
+  },
+  {
+    "revision": "1b38483af83a8b24081ab6b2e6473fa8",
+    "url": "/project-ui-challenges/static/media/sigil-thumb-3-baratheon.1b38483a.png"
+  },
+  {
+    "revision": "2800cf72bb81f7d19ca1f125c1588ad6",
+    "url": "/project-ui-challenges/static/media/sigil-thumb-4-targaryen.2800cf72.png"
+  },
+  {
+    "revision": "20c221443c5d2c86676c60ced2f446cd",
+    "url": "/project-ui-challenges/static/media/sigil-thumb-5-greyjoy.20c22144.png"
+  },
+  {
+    "revision": "dd6913117f5f65437516f83f10232ace",
+    "url": "/project-ui-challenges/static/media/sigil-thumb-6-martell.dd691311.png"
+  },
+  {
+    "revision": "bb5e2d56d99d405be5e4834044c7d17f",
+    "url": "/project-ui-challenges/static/media/sigil-thumb-7-tyrell.bb5e2d56.png"
+  },
+  {
+    "revision": "7aa21150f239fb71ae44",
+    "url": "/project-ui-challenges/static/css/1.d2024281.chunk.css"
+  },
+  {
+    "revision": "6f3e395d59016e9f2bad019478d531e2",
     "url": "/project-ui-challenges/index.html"
   }
 ];
