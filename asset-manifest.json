@@ -1,10 +1,10 @@
 {
   "main.css": "/project-ui-challenges/static/css/main.2dc25710.chunk.css",
-  "main.js": "/project-ui-challenges/static/js/main.59edefc3.chunk.js",
-  "main.js.map": "/project-ui-challenges/static/js/main.59edefc3.chunk.js.map",
+  "main.js": "/project-ui-challenges/static/js/main.befb05fd.chunk.js",
+  "main.js.map": "/project-ui-challenges/static/js/main.befb05fd.chunk.js.map",
   "static/css/1.d2024281.chunk.css": "/project-ui-challenges/static/css/1.d2024281.chunk.css",
-  "static/js/1.7aa21150.chunk.js": "/project-ui-challenges/static/js/1.7aa21150.chunk.js",
-  "static/js/1.7aa21150.chunk.js.map": "/project-ui-challenges/static/js/1.7aa21150.chunk.js.map",
+  "static/js/1.69a97b45.chunk.js": "/project-ui-challenges/static/js/1.69a97b45.chunk.js",
+  "static/js/1.69a97b45.chunk.js.map": "/project-ui-challenges/static/js/1.69a97b45.chunk.js.map",
   "runtime~main.js": "/project-ui-challenges/static/js/runtime~main.5ac804df.js",
   "runtime~main.js.map": "/project-ui-challenges/static/js/runtime~main.5ac804df.js.map",
   "static/media/product-image.jpg": "/project-ui-challenges/static/media/product-image.ff247112.jpg",
@@ -46,9 +46,9 @@
   "static/media/sigil-thumb-6-martell.png": "/project-ui-challenges/static/media/sigil-thumb-6-martell.dd691311.png",
   "static/media/sigil-thumb-7-tyrell.png": "/project-ui-challenges/static/media/sigil-thumb-7-tyrell.bb5e2d56.png",
   "static/media/sigil-thumb-8-tully.png": "/project-ui-challenges/static/media/sigil-thumb-8-tully.5bb97981.png",
-  "static/css/1.d2024281.chunk.css.map": "/project-ui-challenges/static/css/1.d2024281.chunk.css.map",
   "static/css/main.2dc25710.chunk.css.map": "/project-ui-challenges/static/css/main.2dc25710.chunk.css.map",
+  "static/css/1.d2024281.chunk.css.map": "/project-ui-challenges/static/css/1.d2024281.chunk.css.map",
   "index.html": "/project-ui-challenges/index.html",
-  "precache-manifest.6d334d2b8f385dac21cd108b90985369.js": "/project-ui-challenges/precache-manifest.6d334d2b8f385dac21cd108b90985369.js",
+  "precache-manifest.53abd7db6adc75b04d28f204c246a8d7.js": "/project-ui-challenges/precache-manifest.53abd7db6adc75b04d28f204c246a8d7.js",
   "service-worker.js": "/project-ui-challenges/service-worker.js"
 }

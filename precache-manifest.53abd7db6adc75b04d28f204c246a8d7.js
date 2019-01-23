@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/project-ui-challenges/static/media/artist-rush-cover.53061ee5.jpg"
   },
   {
-    "revision": "59edefc3c7522c666d3d",
+    "revision": "befb05fd75d73632ae1f",
     "url": "/project-ui-challenges/static/css/main.2dc25710.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/project-ui-challenges/static/media/sigil-thumb-8-tully.5bb97981.png"
   },
   {
-    "revision": "7aa21150f239fb71ae44",
-    "url": "/project-ui-challenges/static/js/1.7aa21150.chunk.js"
+    "revision": "69a97b4555a3cbaa1ae6",
+    "url": "/project-ui-challenges/static/js/1.69a97b45.chunk.js"
   },
   {
     "revision": "5ac804dfdacf09501884",
@@ -88,8 +88,8 @@ self.__precacheManifest = [
     "url": "/project-ui-challenges/static/media/profile.b3c64d26.png"
   },
   {
-    "revision": "59edefc3c7522c666d3d",
-    "url": "/project-ui-challenges/static/js/main.59edefc3.chunk.js"
+    "revision": "befb05fd75d73632ae1f",
+    "url": "/project-ui-challenges/static/js/main.befb05fd.chunk.js"
   },
   {
     "revision": "86b53ba6432135ea034e9f4539fd3e47",
@@ -172,11 +172,11 @@ self.__precacheManifest = [
     "url": "/project-ui-challenges/static/media/sigil-thumb-7-tyrell.bb5e2d56.png"
   },
   {
-    "revision": "7aa21150f239fb71ae44",
+    "revision": "69a97b4555a3cbaa1ae6",
     "url": "/project-ui-challenges/static/css/1.d2024281.chunk.css"
   },
   {
-    "revision": "6f3e395d59016e9f2bad019478d531e2",
+    "revision": "2229b17c82b26d1ce157d248c287d990",
     "url": "/project-ui-challenges/index.html"
   }
 ];
