@@ -17,6 +17,7 @@ import FlashMessage from "./011_flash-message/FlashMessage";
 import Ample from "./012_ample/Ample";
 import Dusk from "./013_dusk/Dusk";
 import GotSeason8 from "./014_got-season-8/GotSeason8";
+import OnOffSwitch from "./015_on-off-switch/OnOffSwitch";
 
 export class App extends Component {
   render() {
@@ -146,6 +147,14 @@ export class App extends Component {
                           January 23, 2019
                         </span>
                       </li>
+
+                      <li className="app-menu-list__item">
+                        <Link to="/015">015. On/Off Switch</Link>
+
+                        <span className="app-menu-list__item-date">
+                          January 23, 2019
+                        </span>
+                      </li>
                     </ul>
                   </nav>
                 </div>
@@ -179,6 +188,8 @@ export class App extends Component {
             <Route path="/013" component={Dusk} />
 
             <Route path="/014" component={GotSeason8} />
+
+            <Route path="/015" component={OnOffSwitch} />
 
             <Route component={() => <div>404 Not found</div>} />
           </Switch>

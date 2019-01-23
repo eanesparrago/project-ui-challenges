@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import styled, { createGlobalStyle } from "styled-components";
-import textCrop from "../utils/textCrop";
 import imageSigil1Stark from "./images/sigil-1-stark.png";
 import imageSigilThumb1Stark from "./images/sigil-thumb-1-stark.png";
 import imageSigilThumb2Lannister from "./images/sigil-thumb-2-lannister.png";
@@ -11,56 +10,56 @@ import imageSigilThumb6Martell from "./images/sigil-thumb-6-martell.png";
 import imageSigilThumb7Tyrell from "./images/sigil-thumb-7-tyrell.png";
 import imageSigilThumb8Tully from "./images/sigil-thumb-8-tully.png";
 
-const houses = [
-  {
-    name: "Stark",
-    motto: "Winter is Coming.",
-    color: "#F4EAE4",
-    textColor: "dark"
-  },
-  {
-    name: "Lannister",
-    motto: "Hear Me Roar!",
-    color: "#A41D20",
-    textColor: "light"
-  },
-  {
-    name: "Baratheon",
-    motto: "Ours Is the Fury.",
-    color: "#D3C5AA",
-    textColor: "dark"
-  },
-  {
-    name: "Targaryen",
-    motto: "Fire and Blood.",
-    color: "#282828",
-    textColor: "light"
-  },
-  {
-    name: "Greyjoy",
-    motto: "We Do Not Sow.",
-    color: "#000000",
-    textColor: "light"
-  },
-  {
-    name: "Martell",
-    motto: "Unbowed, Unbent, Unbroken.",
-    color: "#E29D2D",
-    textColor: "dark"
-  },
-  {
-    name: "Tyrell",
-    motto: "Growing Strong.",
-    color: "#7DB797",
-    textColor: "dark"
-  },
-  {
-    name: "Tully",
-    motto: "Family, Duty, Honor.",
-    color: "#A41D20",
-    textColor: "light"
-  }
-];
+// const houses = [
+//   {
+//     name: "Stark",
+//     motto: "Winter is Coming.",
+//     color: "#F4EAE4",
+//     textColor: "dark"
+//   },
+//   {
+//     name: "Lannister",
+//     motto: "Hear Me Roar!",
+//     color: "#A41D20",
+//     textColor: "light"
+//   },
+//   {
+//     name: "Baratheon",
+//     motto: "Ours Is the Fury.",
+//     color: "#D3C5AA",
+//     textColor: "dark"
+//   },
+//   {
+//     name: "Targaryen",
+//     motto: "Fire and Blood.",
+//     color: "#282828",
+//     textColor: "light"
+//   },
+//   {
+//     name: "Greyjoy",
+//     motto: "We Do Not Sow.",
+//     color: "#000000",
+//     textColor: "light"
+//   },
+//   {
+//     name: "Martell",
+//     motto: "Unbowed, Unbent, Unbroken.",
+//     color: "#E29D2D",
+//     textColor: "dark"
+//   },
+//   {
+//     name: "Tyrell",
+//     motto: "Growing Strong.",
+//     color: "#7DB797",
+//     textColor: "dark"
+//   },
+//   {
+//     name: "Tully",
+//     motto: "Family, Duty, Honor.",
+//     color: "#A41D20",
+//     textColor: "light"
+//   }
+// ];
 
 const theme = {
   font: {
@@ -110,7 +109,7 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const StyledGotSeason8 = styled.div`
-  border: 1px solid cyan;
+  /* border: 1px solid cyan; */
   width: 100%;
   min-height: 100vh;
   display: flex;
