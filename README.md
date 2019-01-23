@@ -67,12 +67,26 @@ You can view the designs I came up with here: https://ljesp.github.io/project-ui
 
 *It took me a couple of days to design this interface with reponsive layouts for different screen size. I only coded the desktop layout of the interface since I realized that it would require more commitment i.e. it need to be a separate project. I would love to develop the entirety of this UI in the future.*
 
-### Day 13: Direct Messaging — "Dusk" * (Mobile)*
+### Day 13: Direct Messaging — "Dusk" *(Mobile)*
 <img src="https://user-images.githubusercontent.com/36854142/51523665-2869d500-1e67-11e9-8b46-191dd3bcbf05.png" alt="Direct Messaging" width="500"/>
 
 [Figma Project Link](https://www.figma.com/file/RGN0Jlmiv7hCY4SugkENdXf8/013_direct-messaging_dusk?node-id=9%3A13)
 
 *This is a typical looking UI designed with accessibility in mind. It's influenced by interfaces of by Messenger and Discord.*
+
+### Day 14: Countdown Timer — "Game of Thrones Season 8 Countdown"
+<img src="https://user-images.githubusercontent.com/36854142/51608503-9f2fcc80-1f52-11e9-9f2c-318dd4bde637.png" alt="Countdown Timer" width="500"/>
+
+[Figma Project Link](https://www.figma.com/file/WkemkxXkaqgakpODpZBj0oGP/014_countdown-timer_got-countdown)
+
+*Just a countdown timer. No functionality included.*
+
+### Day 15: On/Off Switch
+<img src="https://user-images.githubusercontent.com/36854142/51608627-fd5caf80-1f52-11e9-9152-d013cd73c6ba.png" alt="Countdown Timer" width="500"/>
+
+[Figma Project Link](https://www.figma.com/file/BmrO05ADPlZRnoEkmOPrhzat/015_on-off-switch?node-id=0%3A1)
+
+*Minimalist on/off switch. I used react-spring for animation once again.*
 
 ## Technologies / Tools
 ### React
