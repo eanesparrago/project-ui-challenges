@@ -16,6 +16,7 @@ import SocialShare from "./010_social-share/SocialShare";
 import FlashMessage from "./011_flash-message/FlashMessage";
 import Ample from "./012_ample/Ample";
 import Dusk from "./013_dusk/Dusk";
+import GotSeason8 from "./014_got-season-8/GotSeason8";
 
 export class App extends Component {
   render() {
@@ -123,7 +124,7 @@ export class App extends Component {
                       </li>
 
                       <li className="app-menu-list__item">
-                        <Link to="/012">012. Ample</Link>
+                        <Link to="/012">012. Ample (E-Commerce Shop)</Link>
 
                         <span className="app-menu-list__item-date">
                           January 17, 2019
@@ -131,10 +132,18 @@ export class App extends Component {
                       </li>
 
                       <li className="app-menu-list__item">
-                        <Link to="/013">013. Dusk</Link>
+                        <Link to="/013">013. Dusk (Direct Messaging)</Link>
 
                         <span className="app-menu-list__item-date">
                           January 21, 2019
+                        </span>
+                      </li>
+
+                      <li className="app-menu-list__item">
+                        <Link to="/014">014. Game of Thrones Season 8 Countdown (Countdown Timer)</Link>
+
+                        <span className="app-menu-list__item-date">
+                          January 23, 2019
                         </span>
                       </li>
                     </ul>
@@ -168,6 +177,8 @@ export class App extends Component {
             <Route path="/012" component={Ample} />
 
             <Route path="/013" component={Dusk} />
+
+            <Route path="/014" component={GotSeason8} />
 
             <Route component={() => <div>404 Not found</div>} />
           </Switch>

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { Button } from "../../components";
 
 const StyledColorOption = styled.div`
   display: flex;

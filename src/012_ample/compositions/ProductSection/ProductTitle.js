@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import textCrop from "../../utils/textCrop";
-import TextFit from "react-textfit";
 
 const StyledProductTitleBox = styled.div`
   /* border: 1px solid magenta; */

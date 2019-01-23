@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import styled, { ThemeProvider } from "styled-components";
 import GlobalStyle, { theme } from "./GlobalStyle";
 
-import { Logo, Typography, Button } from "./components";
 import { Header, ProductSection } from "./compositions";
 
 const StyledAmple = styled.div`

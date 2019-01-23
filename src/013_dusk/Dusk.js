@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Chat from "./pages/Chat";
 import textCrop from "../utils/textCrop";
@@ -69,7 +69,7 @@ const StyledDusk = styled.div`
 
   .header {
     /* border: 1px solid cyan; */
-    width: 100%
+    width: 100%;
     height: ${theme.em(80)};
     background-color: ${theme.color.black};
     color: ${theme.color.white};
