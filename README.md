@@ -51,7 +51,7 @@ You can view the designs I came up with here: https://ljesp.github.io/project-ui
 *This is one of the bigger UIs I've made. The challenge was to make a music player but I designed more of a Spotify-like site. Designing and coding each took a day.*
 
 ### Day 10: Social Share
-<img src="https://user-images.githubusercontent.com/36854142/51086990-6b052080-1788-11e9-8973-519ab4b38f68.png" alt="Social Share" width="500"/>
+<img src="https://user-images.githubusercontent.com/36854142/51523996-f6a53e00-1e67-11e9-8352-a3d7b427a818.png" alt="Social Share" width="500"/>
 
 *A simpe social share button. I wasn't able to create the animation I originally intended which requires a more advanced use of React-Spring.*
 
@@ -61,12 +61,18 @@ You can view the designs I came up with here: https://ljesp.github.io/project-ui
 *Creating this was delightful all throughout. Absolute positioning was heavily used to layout the design elements. This one is fully responsive!*
 
 ### Day 12: E-Commerce Shop (Single Item) — "Ample" *(Desktop Only)*
-<img src="https://user-images.githubusercontent.com/36854142/51426366-907ca900-1c24-11e9-854e-b8aba395c440.png" alt="Flash Message" width="500"/>
+<img src="https://user-images.githubusercontent.com/36854142/51426366-907ca900-1c24-11e9-854e-b8aba395c440.png" alt="E-commerce shop" width="500"/>
 
-[Figma Project](https://www.figma.com/file/DrBjhsmBo1o3gyh3bvQSpAFS/012_e-commerce-shop_ample?node-id=7%3A0)
+[Figma Project Link](https://www.figma.com/file/DrBjhsmBo1o3gyh3bvQSpAFS/012_e-commerce-shop_ample?node-id=7%3A0)
 
 *It took me a couple of days to design this interface with reponsive layouts for different screen size. I only coded the desktop layout of the interface since I realized that it would require more commitment i.e. it need to be a separate project. I would love to develop the entirety of this UI in the future.*
 
+### Day 13: Direct Messaging — "Dusk" * (Mobile)*
+<img src="https://user-images.githubusercontent.com/36854142/51523665-2869d500-1e67-11e9-8b46-191dd3bcbf05.png" alt="Direct Messaging" width="500"/>
+
+[Figma Project Link](https://www.figma.com/file/RGN0Jlmiv7hCY4SugkENdXf8/013_direct-messaging_dusk?node-id=9%3A13)
+
+*This is a typical looking UI designed with accessibility in mind. It's influenced by interfaces of by Messenger and Discord.*
 
 ## Technologies / Tools
 ### React
