@@ -97,7 +97,7 @@ class Toggle extends Component {
   };
 
   render() {
-    const { isOn, isHovered, isActive } = this.state;
+    const { isOn } = this.state;
 
     return (
       <StyledToggle
